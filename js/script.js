@@ -113,7 +113,7 @@ function getJSONAlunos(){
 			'"descricaoTarefa":"Listagem de alunos", "url":"/Grupo 8 - Neto e Rikson/neto/index.html"},'+
 
 			'{"id":12, "nome":"Rikson", "grupo":"Grupo 8", "imagem":"images/alunos/Grupo8-Rikson.png",'+
-			'"descricaoTarefa":"Listagem de alunos", "url":"/Grupo 8 - Neto e Rikson/rikson/index.html"},'+
+			'"descricaoTarefa":"Demonstração HTML5", "url":"/Grupo 8 - Neto e Rikson/rikson/index.html"},'+
 
 			'{"id":13, "nome":"Hugo", "grupo":"Grupo 9", "imagem":"images/alunos/Grupo9-Hugo.png",'+
 			'"descricaoTarefa":"Teste Acessibilidade", "url":"/Grupo 9 - Rebeca e Hugo/index.html"},'+
