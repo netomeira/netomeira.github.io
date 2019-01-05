@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css"/>
+		<title>Projeto design de interface</title>
+	</head>
+<body>
+
+<h1>CANVAS</h1>
+<div class="paragrafo01">
+	<p>A TAG HTML canvas é usado para desenhar gráficos, on the fly, via JavaScript. Essa tag é apenas um contêiner para gráficos.</p>
+	<p> Você deve usar JavaScript para desenhar os gráficos.</p>
+	<p>O Canvas tem vários métodos para desenhar caminhos, caixas, círculos, texto e adição de imagens.</p>
+</div>
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+// Create gradient
+var grd = ctx.createRadialGradient(75,50,5,90,60,100);
+grd.addColorStop(0,"red");
+grd.addColorStop(1,"white");
+
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10,10,150,80);
+</script>
+
+
+
+</body>
+</html>
+
+
+
+
+

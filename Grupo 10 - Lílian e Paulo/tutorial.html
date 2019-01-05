@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css"/>
+		<title>Projeto design de interface</title>
+	</head>
+	<header>
+		<div class="top-site">
+			<section class="top">
+				<h1><img src="images/logo.png" alt=""></h1>
+			</section>
+			<section class="top">
+				<p></p>
+			</section>
+			<section class="top">
+				<input class="item" type="search" placeholder="Buscar"></div>
+			</section>
+			</section>
+		</div>
+	</header>
+	<section class="banner">
+	</section>
+	<nav>
+		<menu>
+			<ul>
+			  <li><a class="active" href="#home">Home</a></li>
+			</ul>
+		<menu>
+	</nav>
+	<body>
+		<main>
+			<section class="content">
+				<article>
+						<h2>Tutorial Flex e Grid</h2>
+						<p>O sistema de grid do Bootstrap usa uma série de contêineres, linhas e colunas para layout e alinhamento do conteúdo.É construído com flexbox e é totalmente responsivo. Abaixo está um exemplo e uma visão detalhada de como a grid se une.</p>
+						<figure>
+							<img  class="flexBox" height="100%" width="100%" src="images/exemploFlexBox.png" alt="">
+						</figure>
+						<a href="https://htmledit.squarefree.com/" target="_blank" >Teste o código aqui</a>
+						<p>O exemplo acima cria três colunas de largura igual em dispositivos pequenos, médios, grandes e extra grandes usando as classes de grid predefinidas. Essas colunas estão centralizadas na página com o pai .container.</p>
+						<p><b>Aqui está como funciona</b></p>
+						<p>Os contêineres fornecem um meio de centralizar e horizontalmente preencher o conteúdo do seu site. Use .containerpara uma largura de pixel responsiva ou .container-fluidpara width: 100%todos os tamanhos de dispositivo e porta de visualização.</p>
+						<p>Linhas são invólucros para colunas. Cada coluna tem horizontal padding(chamada de medianiz) para controlar o espaço entre elas. Isso paddingé então neutralizado nas linhas com margens negativas. Dessa forma, todo o conteúdo das colunas é alinhado visualmente no lado esquerdo.</p>
+						<p>Em um layout de grid, o conteúdo deve ser colocado dentro de colunas e somente colunas podem ser filhos imediatos de linhas.</p>
+						<p>Graças ao flexbox, as colunas de grid sem um widthlayout específico serão automaticamente distribuídas como colunas de largura igual. Por exemplo, quatro instâncias de .col-smvontade serão automaticamente de 25% de largura a partir do pequeno ponto de interrupção e para cima. Veja a seção de colunas de layout automático para mais exemplos.</p>
+						<p>Classes de colunas indicam o número de colunas que você gostaria de usar, dentre as possíveis 12 por linha. Então, se você quiser três colunas de largura igual, você pode usar .col-4.</p>
+						<p>As colunas widths são definidas em porcentagens, então elas são sempre fluidas e dimensionadas em relação ao elemento pai.</p>
+						<p>Colunas têm horizontal paddingpara criar as calhas entre as colunas individuais, no entanto, você pode remover a marginpartir de linhas e paddingde colunas com .no-guttersno .row.</p>
+						<p>Para tornar a grid responsiva, existem cinco pontos de interrupção de grid, um para cada ponto de interrupção responsivo : todos os pontos de interrupção (extra pequeno), pequeno, médio, grande e extra grande.</p>
+						<p>Pontos de interrupção de grid são baseados em largura mínima de consultas de mídia, o que significa que se aplicam a esse ponto de interrupção e todos aqueles acima dele (por exemplo, .col-sm-4se aplica a dispositivos pequenos, médios, grandes e extra grandes, mas não ao primeiro xsponto de interrupção).</p>
+						<p>Você pode usar classes de grid predefinidas (como .col-4) ou mixins Sass para mais marcações semânticas.</p>
+						<p><b>Opções de grid</b></p>
+						<p>Enquanto o Bootstrap usa ems ou rems para definir a maioria dos tamanhos, pxs são usados ​​para pontos de interrupção de grid e larguras de contêineres. Isso ocorre porque a largura da janela de visualização está em pixels e não muda com o tamanho da fonte .</p>
+						<p>Veja como os aspectos do sistema de grid do Bootstrap funcionam em vários dispositivos com uma tabela útil.</p>
+						<figure>
+							<img class="opcaoGrid" height="100%" width="100%" src="images/exemploOpcaoGrid.png" alt="">
+						</figure>
+						<a href="https://htmledit.squarefree.com/" target="_blank" >Teste o código aqui</a>
+						<p><b>Largura igual</b></p>
+						<p>Por exemplo, aqui estão dois layouts de grid que se aplicam a todos os dispositivos e visores, de xspara xl. Adicione qualquer número de classes sem unidade para cada ponto de interrupção necessário e todas as colunas terão a mesma largura.</p>
+						<figure>
+							<img class="largura" height="100%" width="100%" src="images/exemploLargura.png" alt="">
+						</figure>
+						<a href="https://htmledit.squarefree.com/" target="_blank" >Teste o código aqui</a>
+						<p>Colunas de largura igual podem ser divididas em várias linhas, mas havia um bug do Flexbox do Safari que impedia que isso funcionasse sem um código explícito flex-basisou border. Existem soluções alternativas para versões mais antigas de navegadores, mas elas não devem ser necessárias se você estiver atualizado.</p>
+						<figure>
+							<img class="bugFlex" height="100%" width="100%" src="images/exemploBugFlex.png" alt="">
+						</figure>
+						<a href="https://htmledit.squarefree.com/" target="_blank" >Teste o código aqui</a>
+						<p><b>Definindo uma largura de coluna</b></p>
+						<p>Layout automático para colunas da grid do flexbox também significa que você pode definir a largura de uma coluna e fazer com que as colunas irmãs sejam redimensionadas automaticamente em torno dela. Você pode usar classes de grid predefinidas (como mostrado abaixo), mixins de grid ou larguras inline. Observe que as outras colunas serão redimensionadas, independentemente da largura da coluna central.</p>
+						<figure>
+							<img class="definindoLargura" height="100%" width="100%" src="images/exemploDefinindoLargura.png" alt="">
+						</figure>
+						<a href="https://htmledit.squarefree.com/" target="_blank" >Teste o código aqui</a>
+						<p><b>Quebras de coluna</b></p>
+						<p>Quebrar colunas em uma nova linha no flexbox requer um pequeno hack: adicione um elemento width: 100%onde quer que você queira colocar suas colunas em uma nova linha. Normalmente isso é feito com vários .rows, mas nem todo método de implementação pode explicar isso.</p>
+						<figure>
+							<img class="quebraColuna" height="100%" width="100%" src="images/exemploQuebraColuna.png" alt="">
+						</figure>
+						<a href="https://htmledit.squarefree.com/" target="_blank" >Teste o código aqui</a>
+						<p><b>Ordenar classes</b></p>
+						<p>Use .order-classes para controlar a ordem visual do seu conteúdo. Essas classes são responsivas, então você pode definir o orderponto de interrupção (por exemplo, .order-1.order-md-2). Inclui suporte para 1meio 12em todas as cinco camadas de grade.</p>
+						<figure>
+							<img class="ordenar" height="100%" width="100%" src="images/exemploOrdenar.png" alt="">
+						</figure>
+						<a href="https://htmledit.squarefree.com/" target="_blank" >Teste o código aqui</a>
+						<p><b>Utilitários de margem</b></p>
+						<p>Com a mudança para o flexbox na v4, você pode usar utilitários de margem .mr-autopara forçar as colunas de irmãos a se afastarem umas das outras.</p>
+						<figure>
+							<img class="utilitario" height="100%" width="100%" src="images/exemploUtilitario.png" alt="">
+						</figure>
+						<a href="https://htmledit.squarefree.com/" target="_blank" >Teste o código aqui</a>
+						<p><b>Aninhamento</b></p>
+						<p>Para aninhar seu conteúdo com a grade padrão, adicione um novo .rowe um conjunto de .col-sm-*colunas em uma .col-sm-*coluna existente . As linhas aninhadas devem incluir um conjunto de colunas que somam 12 ou menos (não é necessário usar todas as 12 colunas disponíveis).</p>
+						<figure>
+							<img class="aninhamento" height="100%" width="100%" src="images/exemploAninhamento.png" alt="">
+						</figure>
+						<a href="https://htmledit.squarefree.com/" target="_blank" >Teste o código aqui</a>
+						<p><b>Níveis de grid</b></p>
+						<p>Movendo-se além das colunas, você também pode personalizar o número de camadas da grid. Se você quisesse apenas quatro níveis de grid, você atualizaria o $grid-breakpointse $container-max-widthspara algo assim:</p>
+						<figure>
+							<img class="niveis" height="100%" width="100%" src="images/exemploNiveis.png" alt="">
+						</figure>
+						<a href="https://htmledit.squarefree.com/" target="_blank" >Teste o código aqui</a>
+				</article>
+			</section>
+		</main>
+	</body>
+	<footer>
+		<section class="footer-txt">
+			<p>Portal Unipê Ver. 3.0 . Copyright © Todos os direitos reservados . Design e Projeto - Ascom Unipê</p>
+			<p>IPE Educacional Ltda. Política de Privacidade.</p>
+			<p>CNPJ: 08.679.557/0001-02</p>
+			<p><span>Graças a generosidade da QuestionPro, temos acesso ao seu software de pesquisa online que nos ajuda a acompanhar e analisar informações sobre nossos stakeholders.</span></p>
+		</section>
+		<section style="position: initial">
+			<img src="images/footerimg.jpg" alt="">
+		</section>
+	</footer>
+	<script src="js/script.js"></script>
+</html>

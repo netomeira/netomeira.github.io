@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css"/>
+		<link rel="stylesheet" href="css/transition-transform-animation.css"/>
+		<title>Projeto design de interface</title>
+	</head>
+	<header>
+		<div class="top-site">
+			<section class="top">
+				<h1><img src="images/logo.png" alt=""></h1>
+			</section>
+			<section class="top">
+				<p></p>
+			</section>
+			<section class="top">
+				<input class="item" type="search" placeholder="Buscar"></div>
+			</section>
+			</section>
+		</div>
+	</header>
+	<section class="banner">
+	</section>
+	<nav>
+		<menu>
+			<ul class="menu-list">
+			  <li><a class="active" href="#home">Home</a></li>
+			  <li><a href="#">pagina 01</a></li>
+			  <li><a href="#">pagina 02</a></li>
+			  <li><a href="#">pagina 03</a></li>
+			</ul>
+		<menu>
+	</nav>
+	<body>
+		<main id="tutorial">
+			<section>
+				<h1>Transform</h1>
+				<p>A propriedade <code class="codespan">transform</code> aplica sobre transformações 2D e 3D em um elemento. Esta propriedade permite mover,
+				rotacionar, escalar, inclicar, entre outros. Abaixo segue os valores possíveis para esta propriedade.</p>
+			</section>
+
+			<section>
+				<h2><code class="codespan">matrix(n, n, n, n, n, n)</code></h2>
+				<p>Aplica uma tranformação 2D, utilizando uma matriz de 6 valores.</p>
+
+				<h4>Exemplo</h4>
+				<script async src="https://jsfiddle.net/rafaelsm/an7gec3p/embed/html,css,result/dark/"></script>
+			</section>
+
+			<section>
+				<h2><code class="codespan">matrix3d(n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n)</code></h2>
+				<p>Aplica uma tranformação 3D, utilizando uma matriz 4x4 de 16 valores.</p>
+			</section>
+
+			<section>
+				<h2><code class="codespan">translate(x,y)</code></h2>
+				<p>Define uma translação 2D.</p>
+
+				<h4>Exemplo</h4>
+				<script async src="https://jsfiddle.net/rafaelsm/5814v7d9/embed/html,css,result/dark/"></script>
+			</section>
+
+			<section>
+				<h2><code class="codespan">translate3d(x,y,z)</code></h2>
+				<p>Define uma translação 3D.</p>
+			</section>
+
+			<section>
+				<h2><code class="codespan">translateX(x)</code></h2>
+				<p>Faz uma translação 2D apenas no eixo x.</p>
+			
+				<h4>Exemplo</h4>
+				<script async src="https://jsfiddle.net/rafaelsm/1pu0ae5h/embed/html,css,result/dark/"></script>
+			</section>
+			
+			<section>
+				<h2><code class="codespan">translateY(y)</code></h2>
+				<p>Faz uma translação 2D apenas no eixo y.</p>
+			
+				<h4>Exemplo</h4>
+				<script async src="https://jsfiddle.net/rafaelsm/w9yobtxs/embed/html,css,result/dark/"></script>
+			</section>
+			
+			<section>
+				<h2><code class="codespan">translateZ(z)</code></h2>
+				<p>Faz uma translação 3D apenas no eixo z.</p>
+			</section>
+
+			<section>
+				<h2><code class="codespan">scale(x,y)</code></h2>
+				<p>Define uma tranformação de escala 2D.</p>
+			
+				<h4>Exemplo</h4>
+				<script async src="https://jsfiddle.net/rafaelsm/1yg2qp9c/embed/html,css,result/dark/"></script>
+			</section>
+			
+			<section>
+				<h2><code class="codespan">scale3d(x,y,z)</code></h2>
+				<p>Define uma tranformação de escala 3D.</p>
+			</section>
+
+			<section>
+				<h2><code class="codespan">scaleX(x)</code></h2>
+				<p>Faz uma tranformação de escala 2D apenas no eixo x.</p>
+			
+				<h4>Exemplo</h4>
+				<script async src="https://jsfiddle.net/rafaelsm/rpnu4kaz/embed/html,css,result/dark/"></script>
+			</section>
+			
+			<section>
+				<h2><code class="codespan">scaleY(y)</code></h2>
+				<p>Faz uma tranformação de escala 2D apenas no eixo y.</p>
+			
+				<h4>Exemplo</h4>
+				<script async src="https://jsfiddle.net/rafaelsm/35ynt1jp/embed/html,css,result/dark/"></script>
+			</section>
+			
+			<section>
+				<h2><code class="codespan">scaleZ(z)</code></h2>
+				<p>Faz uma tranformação de escala 3D apenas no eixo z.</p>
+			</section>
+
+			<section>
+				<h2><code class="codespan">rotate(angle)</code></h2>
+				<p>Define uma rotação 2D, utilizando o ângulo (em <code class="codespan">deg</code>) passado como parâmetro.</p>
+			
+				<h4>Exemplo</h4>
+				<script async src="https://jsfiddle.net/rafaelsm/7e16donx/embed/html,css,result/dark/"></script>
+			</section>
+
+			<section>
+				<h2><code class="codespan">rotate3d(x,y,z,angle)</code></h2>
+				<p>Define uma rotação 3D.</p>
+			</section>
+
+			<section>
+				<h2><code class="codespan">rotateX(angle)</code></h2>
+				<p>Define uma rotação 3D no eixo x.</p>
+
+				<h4>Exemplo</h4>
+				<script async src="https://jsfiddle.net/rafaelsm/4r5egsv0/embed/html,css,result/dark/"></script>
+			</section>
+
+			<section>
+				<h2><code class="codespan">rotateY(angle)</code></h2>
+				<p>Define uma rotação 3D no eixo y.</p>
+
+				<h4>Exemplo</h4>
+				<script async src="https://jsfiddle.net/rafaelsm/gcr12tpk/embed/html,css,result/dark/"></script>
+			</section>
+
+			<section>
+				<h2><code class="codespan">rotateZ(angle)</code></h2>
+				<p>Define uma rotação 3D no eixo z.</p>
+
+				<h4>Exemplo</h4>
+				<script async src="https://jsfiddle.net/rafaelsm/5nqskvya/embed/html,css,result/dark/"></script>
+			</section>
+
+			<section>
+				<h2><code class="codespan">skew(x-angle,y-angle)</code></h2>
+				<p>Define uma transformação de inclinação 2D nos x e y.</p>
+			
+				<h4>Exemplo</h4>
+				<script async src="https://jsfiddle.net/rafaelsm/sa64n7oq/embed/html,css,result/dark/"></script>
+			</section>
+			
+			<section>
+				<h2><code class="codespan">skewX(angle)</code></h2>
+				<p>Define uma transformação de inclinação 2D no eixo x.</p>
+			
+				<h4>Exemplo</h4>
+				<script async src="https://jsfiddle.net/rafaelsm/ct948b17/embed/html,css,result/dark/"></script>
+			</section>
+			
+			<section>
+				<h2><code class="codespan">skewY(angle)</code></h2>
+				<p>Define uma transformação de inclinação 2D no eixo y.</p>
+			
+				<h4>Exemplo</h4>
+				<script async src="https://jsfiddle.net/rafaelsm/3w82opgf/embed/html,css,result/dark/"></script>
+			</section>
+
+			<section>
+				<h2><code class="codespan">perspective(n)</code></h2>
+				<p>Define uma visão perspectiva para um elemento 3D transformado.</p>
+			</section>
+
+			<section>
+				<h2><code class="codespan">initial</code></h2>
+				<p>Seta a propriedade para o seu valor padrão.</p>
+			</section>
+			
+			<section>
+				<h2><code class="codespan">inherit</code></h2>
+				<p>Herda esta propriedade do seu <i>parent</i>.</p>
+			</section>
+
+		</main>
+	</body>
+	<section id="pre-footer">
+		<div class="pre-footer-content">
+			<section>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Pellentesque a pretium dolor. Vestibulum porta at enim in gravida.
+					Sed condimentum laoreet massa quis luctus.</p>
+			</section>
+			<section>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Pellentesque a pretium dolor. Vestibulum porta at enim in gravida.
+					Sed condimentum laoreet massa quis luctus.</p>
+			</section>
+			<section>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Pellentesque a pretium dolor. Vestibulum porta at enim in gravida.
+					Sed condimentum laoreet massa quis luctus.</p>
+			</section>
+			<section>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Pellentesque a pretium dolor. Vestibulum porta at enim in gravida.
+					Sed condimentum laoreet massa quis luctus. </p>
+			</section>
+			<section>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Pellentesque a pretium dolor. Vestibulum porta at enim in gravida.
+					Sed condimentum laoreet massa quis luctus.</p>
+			</section>
+			<section>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Pellentesque a pretium dolor. Vestibulum porta at enim in gravida.
+					Sed condimentum laoreet massa quis luctus.</p>
+			</section>
+		</div>
+	</section>
+	<footer>
+		<section class="footer-txt">
+			<p>Portal Unipê Ver. 3.0 . Copyright © Todos os direitos reservados . Design e Projeto - Ascom Unipê</p>
+			<p>IPE Educacional Ltda. Política de Privacidade.</p>
+			<p>CNPJ: 08.679.557/0001-02</p>
+			<p><span>Graças a generosidade da QuestionPro, temos acesso ao seu software de pesquisa online que nos ajuda a acompanhar e analisar informações sobre nossos stakeholders.</span></p>
+		</section>
+		<section style="position: initial">
+			<img src="images/footerimg.jpg" alt="">
+		</section>
+	</footer>
+	<script src="js/script.js"></script>
+</html>
