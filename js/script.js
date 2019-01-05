@@ -122,10 +122,10 @@ function getJSONAlunos(){
 			'"descricaoTarefa":"Notícias de Acessibilidade", "url":"/Grupo 9 - Rebeca e Hugo/index.html"},'+
 
 			'{"id":15, "nome":"Lílian", "grupo":"Grupo 10", "imagem":"images/alunos/Grupo10-Lilian.png",'+
-			'"descricaoTarefa":"Página de avisos", "url":"/Grupo 10 - Lílian e Paulo/interna.html"},'+
+			'"descricaoTarefa":"Tutorial Flex e Grid", "url":"/Grupo 10 - Lílian e Paulo/tutorial.html"},'+
 
 			'{"id":16, "nome":"Paulo", "grupo":"Grupo 10", "imagem":"images/alunos/Grupo10-Paulo.png",'+
-			'"descricaoTarefa":"Tutorial Flex e Grid", "url":"/Grupo 10 - Lílian e Paulo/tutorial.html"},'+
+			'"descricaoTarefa":"Página de avisos", "url":"/Grupo 10 - Lílian e Paulo/interna.html"},'+
 
 			'{"id":17, "nome":"Rafael", "grupo":"Grupo 11", "imagem":"images/alunos/Grupo11-Rafael.png",'+
 			'"descricaoTarefa":"Tutorial Transform", "url":"/Grupo 11 - Rafael e Vínicius/transform.html"},'+
