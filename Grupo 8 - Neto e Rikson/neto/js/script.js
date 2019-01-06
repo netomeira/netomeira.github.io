@@ -98,7 +98,7 @@ function getJSONAlunos(){
 			'"descricaoTarefa":"Relatório de Validação", "url":"/Grupo 4 - Kennethy/relatorio_validacao.html"},'+
 			
 			'{"id":7, "nome":"Andrew", "grupo":"Grupo 5", "imagem":"images/alunos/default.png",'+
-			'"descricaoTarefa":"Pág. Notícias", "url":"#"},'+
+			'"descricaoTarefa":"Pág. Notícias", "url":"/Grupo 5 - Andrew/noticias.html"},'+
 
 			'{"id":8, "nome":"Andrew", "grupo":"Grupo 5", "imagem":"images/alunos/default.png",'+
 			'"descricaoTarefa":"Revisão de Integração", "url":"#"},'+
