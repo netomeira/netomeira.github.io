@@ -1,52 +1,131 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-	<head>
-		<meta charset="utf-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-		<link rel="stylesheet" href="css/style.css"/>
-		<title>Projeto design de interface</title>
-	</head>
-	<header>
-		<div class="top-site">
-			<section class="top">
-				<h1><img src="images/logo.png" alt=""></h1>
-			</section>
-			<section class="top">
-				<p></p>
-			</section>
-			<section class="top">
-				<input class="item" type="search" placeholder="Buscar"></div>
-			</section>
-			</section>
-		</div>
-	</header>
-	<section class="banner">
-	</section>
-	<nav>
-		<menu>
-			<ul>
-			  <li><a class="active" href="#home">Home</a></li>
-			</ul>
-		<menu>
-	</nav>
-	<body>
-		<main>
-			<div id="divAlunos" class="alunos">
-			</div>
-		</main>
-	</body>
-	
-	<footer>
-		<section class="footer-txt">
-			<p>Portal Unipê Ver. 3.0 . Copyright © Todos os direitos reservados . Design e Projeto - Ascom Unipê</p>
-			<p>IPE Educacional Ltda. Política de Privacidade.</p>
-			<p>CNPJ: 08.679.557/0001-02</p>
-			<p><span>Graças a generosidade da QuestionPro, temos acesso ao seu software de pesquisa online que nos ajuda a acompanhar e analisar informações sobre nossos stakeholders.</span></p>
-		</section>
-		<section style="position: initial">
-			<img src="images/footerimg.jpg" alt="">
-		</section>
-	</footer>
-	<script src="js/script.js"></script>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>M&R Engenharia</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="navbar">
+        <a class="logo" href="#"><img src="images/logo.png" alt="M&R Engenharia" title="M&R Engenharia"></a>
+        <div class="navlinks">
+          <a class="navlink servicos" href="#"><b>SERVIÇOS</b></a>
+          <a class="navlink contato" href="#"><b>CONTATO</b></a>
+        </div>
+    </div>
+  </header>
+
+  <div class="wrapper">
+    <div class="top">
+      <header class="hero">
+        <h1>Nosso Compromisso</h1>
+        <p>Respeito e Comprometimento que você merece</p>
+      </header>
+        <div class="cta cta1">
+          <p class="price">$1.99</p>
+          <p>Tacos</p>
+        </div>
+        <div class="cta cta2">
+          <p class="price">$3.99</p>
+          <p>Kombucha</p>
+        </div>
+        <div class="cta cta3">
+          <p class="price">$7.99</p>
+          <p>Burrito</p>
+        </div>
+    </div>
+
+    <nav class="menu">
+      <button aria-expanded="false" aria-controls="menu-list">
+        <span class="open">☰</span>
+        <span class="close">×</span>
+        Menu
+      </button>
+      <ul id="menu-list">
+        <li>
+          <a href="">Tacos</a>
+        </li>
+        <li>
+          <a href="">Beers</a>
+        </li>
+        <li>
+          <a href="">Wines</a>
+        </li>
+        <li>
+          <a href="">Desserts</a>
+        </li>
+        <li>
+          <a href="">Reservations</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="features">
+      <div class="feature">
+        <span class="icon">🌮</span>
+        <h3>Tacos</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+      </div>
+      <div class="feature">
+        <span class="icon">🍺</span>
+        <h3>Beer</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+      </div>
+      <div class="feature">
+        <span class="icon">🍷</span>
+        <h3>Wine</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+      </div>
+      <div class="feature">
+        <span class="icon">🎵</span>
+        <h3>Music</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+      </div>
+    </section>
+
+    <section class="about">
+      <img src="images/queso-taco.png" alt="Yummy Taco" class="about__mockup">
+      <div class="about__details">
+        <h2>Featured Taco</h2>
+        <p>Slim Profile, easy to hold and loaded with cheese.</p>
+        <p>This is the one you have been waiting for</p>
+        <button>Learn More →</button>
+      </div>
+    </section>
+
+
+    <section class="gallery">
+      <h2>Instant Grams</h2>
+      <img src="https://source.unsplash.com/random/201x201" alt="">
+      <img src="https://source.unsplash.com/random/202x202" alt="">
+      <img src="https://source.unsplash.com/random/203x203" alt="">
+      <img src="https://source.unsplash.com/random/204x204" alt="">
+      <img src="https://source.unsplash.com/random/205x205" alt="">
+      <img src="https://source.unsplash.com/random/206x206" alt="">
+      <img src="https://source.unsplash.com/random/207x207" alt="">
+      <img src="https://source.unsplash.com/random/207x208" alt="">
+      <img src="https://source.unsplash.com/random/207x209" alt="">
+      <img src="https://source.unsplash.com/random/207x210" alt="">
+    </section>
+  </div>
+
+  <script>
+    const navButton = document.querySelector('button[aria-expanded]');
+
+    function toggleNav({ target }) {
+      const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+      navButton.setAttribute('aria-expanded', !expanded);
+    }
+
+    navButton.addEventListener('click', toggleNav);
+
+  </script>
+</body>
+
 </html>
