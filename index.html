@@ -2,130 +2,402 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <title>M&R Engenharia</title>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>M&R Engenharia</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet"/>
+
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Cambo|Poppins:400,600' rel='stylesheet' type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/fonts/pe-icon-7-stroke.css" rel="stylesheet">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-  <header>
-    <div class="navbar">
-        <a class="logo" href="#"><img src="images/logo.png" alt="M&R Engenharia" title="M&R Engenharia"></a>
-        <div class="navlinks">
-          <a class="navlink servicos" href="#"><b>SERVIÇOS</b></a>
-          <a class="navlink contato" href="#"><b>CONTATO</b></a>
+    <nav class="navbar navbar-default navbar-transparent navbar-fixed-top" color-on-scroll="200">
+        <!-- if you want to keep the navbar hidden you can add this class to the navbar "navbar-burger"-->
+        <div class="container">
+            <div class="navbar-header">
+                <button id="menu-toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar bar1"></span>
+                    <span class="icon-bar bar2"></span>
+                    <span class="icon-bar bar3"></span>
+                </button>
+                <a href="https://engmr.com.br" class="navbar-brand">
+                    M&R Engenharia
+                </a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right navbar-uppercase">
+                    <li>
+                        <a href="#pagina1" data-scroll="true" data-id="#pagina1">O que é</a>
+                    </li>
+                    <li>
+                        <a href="#pagina2" data-scroll="true" data-id="#pagina2">Vantagens</a>
+                    </li>
+                    <li>
+                        <a href="#pagina3" data-scroll="true" data-id="#pagina3">Quem Somos</a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn btn-danger btn-fill">
+                            <i class="fa fa-envelope"></i> Contato
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-    </div>
-  </header>
-
-  <div class="wrapper">
-    <div class="top">
-      <header class="hero">
-        <h1>Nosso Compromisso</h1>
-        <p>Respeito e Comprometimento que você merece</p>
-      </header>
-        <div class="cta cta1">
-          <p class="price">$1.99</p>
-          <p>Tacos</p>
-        </div>
-        <div class="cta cta2">
-          <p class="price">$3.99</p>
-          <p>Kombucha</p>
-        </div>
-        <div class="cta cta3">
-          <p class="price">$7.99</p>
-          <p>Burrito</p>
-        </div>
-    </div>
-
-    <nav class="menu">
-      <button aria-expanded="false" aria-controls="menu-list">
-        <span class="open">☰</span>
-        <span class="close">×</span>
-        Menu
-      </button>
-      <ul id="menu-list">
-        <li>
-          <a href="">Tacos</a>
-        </li>
-        <li>
-          <a href="">Beers</a>
-        </li>
-        <li>
-          <a href="">Wines</a>
-        </li>
-        <li>
-          <a href="">Desserts</a>
-        </li>
-        <li>
-          <a href="">Reservations</a>
-        </li>
-      </ul>
     </nav>
 
-    <section class="features">
-      <div class="feature">
-        <span class="icon">🌮</span>
-        <h3>Tacos</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
-      </div>
-      <div class="feature">
-        <span class="icon">🍺</span>
-        <h3>Beer</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
-      </div>
-      <div class="feature">
-        <span class="icon">🍷</span>
-        <h3>Wine</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
-      </div>
-      <div class="feature">
-        <span class="icon">🎵</span>
-        <h3>Music</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
-      </div>
-    </section>
 
-    <section class="about">
-      <img src="images/queso-taco.png" alt="Yummy Taco" class="about__mockup">
-      <div class="about__details">
-        <h2>Featured Taco</h2>
-        <p>Slim Profile, easy to hold and loaded with cheese.</p>
-        <p>This is the one you have been waiting for</p>
-        <button>Learn More →</button>
-      </div>
-    </section>
+    <div id="pagina1" class="section section-header">
+        <div class="parallax filter filter-color-black">
+            <div class="image"
+                style="background-image: url('assets/img/header-1.jpeg')">
+            </div>
+            <div class="container">
+                <div class="content">
+                    <div class="title-area">
+                        <h1 class="title-modern">CONSTRUÇÃO INDUSTRIALIZADA</h1>
+                        <h3>Uma forma mais inteligente de fazer sua obra</h2>
+                        <div class="separator line-separator">♦</div>
+                    </div>
+
+                    <div class="button-get-started">
+                        <a href="#header2" data-scroll="true" data-id="#header2" class="btn btn-white btn-fill btn-lg ">
+                            POR QUE CONSTRUIR A SECO?
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
 
-    <section class="gallery">
-      <h2>Instant Grams</h2>
-      <img src="https://source.unsplash.com/random/201x201" alt="">
-      <img src="https://source.unsplash.com/random/202x202" alt="">
-      <img src="https://source.unsplash.com/random/203x203" alt="">
-      <img src="https://source.unsplash.com/random/204x204" alt="">
-      <img src="https://source.unsplash.com/random/205x205" alt="">
-      <img src="https://source.unsplash.com/random/206x206" alt="">
-      <img src="https://source.unsplash.com/random/207x207" alt="">
-      <img src="https://source.unsplash.com/random/207x208" alt="">
-      <img src="https://source.unsplash.com/random/207x209" alt="">
-      <img src="https://source.unsplash.com/random/207x210" alt="">
-    </section>
-  </div>
+    <div id="pagina2" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="title-area">
+                    <h2>Vantagens</h2>
+                    <div class="separator separator-danger">♦</div>
+                    <!-- <p class="description">.</p> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="info-icon">
+                        <div class="icon text-danger">
+                            <i class="pe-7s-stopwatch"></i>
+                        </div>
+                        <h3>Rapidez</h3>
+                        <p class="description">Redução de até 40% no tempo da obra quando comparado com os processos convencionais</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="info-icon">
+                        <div class="icon text-danger">
+                            <i class="pe-7s-piggy"></i>
+                        </div>
+                        <h3>Economia</h3>
+                        <p class="description">We create a persona regarding the multiple wardrobe accessories that we provide.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="info-icon">
+                        <div class="icon text-danger">
+                            <i class="pe-7s-shield"></i>
+                        </div>
+                        <h3>Resistência</h3>
+                        <p class="description">We like to present the world with our work, so we make sure we spread the word regarding our clothes</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="info-icon">
+                        <div class="icon text-danger">
+                            <i class="pe-7s-leaf"></i>
+                        </div>
+                        <h3>Sustentabilidade</h3>
+                        <p class="description">O aço é 100% reciclável e as estruturas podem ser desmontadas e reaproveitadas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-  <script>
-    const navButton = document.querySelector('button[aria-expanded]');
 
-    function toggleNav({ target }) {
-      const expanded = target.getAttribute('aria-expanded') === 'true' || false;
-      navButton.setAttribute('aria-expanded', !expanded);
-    }
+    <div class="section section-our-team-freebie">
+        <div id="pagina3" class="parallax filter filter-color-black">
+            <div class="image" style="background-image:url('assets/img/header-2.jpg')">
+            </div>
+            <div class="container">
+                <div class="content">
+                    <div class="row">
+                        <div class="title-area">
+                            <h2>Who We Are</h2>
+                            <div class="separator separator-danger">♦</div>
+                            <p class="description">We promise you a new look and more importantly, a new attitude. We build that by getting to know you, your needs and creating the best looking clothes.</p>
+                        </div>
+                    </div>
 
-    navButton.addEventListener('click', toggleNav);
+                    <div class="team">
+                        <div class="row">
+                            <div class="col-md-10 col-md-offset-1">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="card card-member">
+                                            <div class="content">
+                                                <div class="avatar avatar-danger">
+                                                    <img alt="..." class="img-circle" src="assets/img/faces/face_1.jpg"/>
+                                                </div>
+                                                <div class="description">
+                                                    <h3 class="title">Tina</h3>
+                                                    <p class="small-text">CEO / Co-Founder</p>
+                                                    <p class="description">I miss the old Kanye I gotta say at that time I’d like to meet Kanye And I promise the power is in the people and I will use the power given by the people to bring everything I have back to the people.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card card-member">
+                                            <div class="content">
+                                                <div class="avatar avatar-danger">
+                                                    <img alt="..." class="img-circle" src="assets/img/faces/face_4.jpg"/>
+                                                </div>
+                                                <div class="description">
+                                                    <h3 class="title">Andrew</h3>
+                                                    <p class="small-text">Product Designer</p>
+                                                    <p class="description">I miss the old Kanye I gotta say at that time I’d like to meet Kanye And I promise the power is in the people and I will use the power given by the people to bring everything I have back to the people.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card card-member">
+                                            <div class="content">
+                                                <div class="avatar avatar-danger">
+                                                    <img alt="..." class="img-circle" src="assets/img/faces/face_3.jpg"/>
+                                                </div>
+                                                <div class="description">
+                                                    <h3 class="title">Michelle</h3>
+                                                    <p class="small-text">Marketing Hacker</p>
+                                                    <p class="description">I miss the old Kanye I gotta say at that time I’d like to meet Kanye And I promise the power is in the people and I will use the power given by the people to bring everything I have back to the people.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
-  </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section section-our-clients-freebie">
+        <div class="container">
+            <div class="title-area">
+                <h5 class="subtitle text-gray">Here are some</h5>
+                <h2>Clients Testimonials</h2>
+                <div class="separator separator-danger">♦</div>
+            </div>
+
+            <ul class="nav nav-text" role="tablist">
+                <li class="active">
+                    <a href="#testimonial1" role="tab" data-toggle="tab">
+                        <div class="image-clients">
+                            <img alt="..." class="img-circle" src="assets/img/faces/face_5.jpg"/>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#testimonial2" role="tab" data-toggle="tab">
+                        <div class="image-clients">
+                            <img alt="..." class="img-circle" src="assets/img/faces/face_6.jpg"/>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#testimonial3" role="tab" data-toggle="tab">
+                        <div class="image-clients">
+                            <img alt="..." class="img-circle" src="assets/img/faces/face_2.jpg"/>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+
+
+            <div class="tab-content">
+                <div class="tab-pane active" id="testimonial1">
+                    <p class="description">
+                        And I used a period because contrary to popular belief I strongly dislike exclamation points! We no longer have to be scared of the truth feels good to be home In Roman times the artist would contemplate proportions and colors. Now there is only one important color... Green I even had the pink polo I thought I was Kanye I promise I will never let the people down. I want a better life for all!
+                    </p>
+                </div>
+                <div class="tab-pane" id="testimonial2">
+                    <p class="description">Green I even had the pink polo I thought I was Kanye I promise I will never let the people down. I want a better life for all! And I used a period because contrary to popular belief I strongly dislike exclamation points! We no longer have to be scared of the truth feels good to be home In Roman times the artist would contemplate proportions and colors. Now there is only one important color...
+                    </p>
+                </div>
+                <div class="tab-pane" id="testimonial3">
+                    <p class="description"> I used a period because contrary to popular belief I strongly dislike exclamation points! We no longer have to be scared of the truth feels good to be home In Roman times the artist would contemplate proportions and colors. The 'Gaia' team did a great work while we were collaborating. They provided a vision that was in deep connection with our needs and helped us achieve our goals.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="section section-small section-get-started">
+        <div class="parallax filter">
+            <div class="image"
+                style="background-image: url('assets/img/header-2.jpeg')">
+            </div>
+            <div class="container">
+                <div class="title-area">
+                    <h2 class="text-white">Entre em contato conosco</h2>
+                    <div class="separator line-separator">♦</div>
+                    <p class="description"> We are keen on creating a second skin for anyone with a sense of style! We design our clothes having our customers in mind and we never disappoint!</p>
+                </div>
+
+                <div class="button-get-started">
+                    <a href="#" class="btn btn-danger btn-fill btn-lg">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer footer-big footer-color-black" data-color="black">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-sm-3">
+                    <div class="info">
+                        <h5 class="title">Company</h5>
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#">Home</a></li>
+                                <li>
+                                    <a href="#">Find offers</a>
+                                </li>
+                                <li>
+                                    <a href="#">Discover Projects</a>
+                                </li>
+                                <li>
+                                    <a href="#">Our Portfolio</a>
+                                </li>
+                                <li>
+                                    <a href="#">About Us</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-md-3 col-md-offset-1 col-sm-3">
+                    <div class="info">
+                        <h5 class="title"> Help and Support</h5>
+                         <nav>
+                            <ul>
+                                <li>
+                                    <a href="#">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a href="#">How it works</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms &amp; Conditions</a>
+                                </li>
+                                <li>
+                                    <a href="#">Company Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Money Back</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <div class="info">
+                        <h5 class="title">Latest News</h5>
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-twitter"></i> <b>Get Shit Done</b> The best kit in the market is here, just give it a try and let us...
+                                        <hr class="hr-small">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-twitter"></i> We've just been featured on <b> Awwwards Website</b>! Thank you everybody for...
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-md-2 col-md-offset-1 col-sm-3">
+                    <div class="info">
+                        <h5 class="title">Follow us on</h5>
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#" class="btn btn-social btn-facebook btn-simple">
+                                        <i class="fa fa-facebook-square"></i> Facebook
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn btn-social btn-dribbble btn-simple">
+                                        <i class="fa fa-dribbble"></i> Dribbble
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn btn-social btn-twitter btn-simple">
+                                        <i class="fa fa-twitter"></i> Twitter
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn btn-social btn-reddit btn-simple">
+                                        <i class="fa fa-google-plus-square"></i> Google+
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright">
+                 © <script> document.write(new Date().getFullYear()) </script> M&R Engenharia
+            </div>
+        </div>
+    </footer>
+
 </body>
+
+<!--   core js files    -->
+<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.js" type="text/javascript"></script>
+
+<!--  js library for devices recognition -->
+<script type="text/javascript" src="assets/js/modernizr.js"></script>
+
+<!--  script for google maps   -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+<script type="text/javascript" src="assets/js/script.js"></script>
 
 </html>
