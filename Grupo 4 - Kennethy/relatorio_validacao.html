@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css"/>
+		<link rel="stylesheet" href="css/transition-transform-animation.css"/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
+		<style>
+			p{
+				text-align: justify;
+			}
+		</style>
+		<title>Projeto design de interface</title>
+	</head>
+	<header>
+		<div class="top-site">
+			<section class="top">
+				<h1><img src="images/logo.png" alt=""></h1>
+			</section>
+			<section class="top">
+				<p></p>
+			</section>
+			<section class="top">
+				<input class="item" type="search" placeholder="Buscar">
+			</section>
+		</div>
+	</header>
+	<section class="banner">
+	</section>
+	<nav>
+		<menu>
+			<ul class="menu-list">
+			  <li><a class="active" href="#home">Home</a></li>
+			  <li><a href="#">pagina 01</a></li>
+			  <li><a href="#">pagina 02</a></li>
+			  <li><a href="#">pagina 03</a></li>
+			</ul>
+		</menu>
+	</nav>
+	<body>
+		<main id="tutorial">
+			<section>
+				<h1>Relatório das validações</h1>
+
+				<p>Os relatórios são baseados na validação do código realizada através da ferramenta da W3C.</p>
+			</section>
+
+			<section>
+					<h4>Grupo 1 - Adriano</h4>
+					<div class="chart-container">
+						<canvas id="myChart1" width="200" height="200"></canvas>
+					</div>
+	
+					<script>
+						var ctx = document.getElementById('myChart1');
+	
+						var chartGraph = new Chart(ctx, {
+							type: 'pie',
+							data:{
+								labels:["Erros", "Alertas"],
+								datasets:[{
+									data: [1, 0],
+									backgroundColor: ["#FF0000", "#FFFF00"]
+								}]
+							}
+						});
+					</script>
+				</section>
+
+			<section>
+				<h4>Grupo 2 - Wandesson</h4>
+				<div class="chart-container">
+					<canvas id="myChart2" width="200" height="200"></canvas>
+				</div>
+
+				<script>
+					var ctx = document.getElementById('myChart2');
+
+					var chartGraph = new Chart(ctx, {
+						type: 'pie',
+						data:{
+							labels:["Erros", "Alertas"],
+							datasets:[{
+								data: [1, 0],
+								backgroundColor: ["#FF0000", "#FFFF00"]
+							}]
+						}
+					});
+				</script>
+			</section>
+
+			<section>
+				<h4>Grupo 3 - Jackson</h4>
+				<div class="chart-container">
+					<canvas id="myChart3" width="200" height="200"></canvas>
+				</div>
+
+				<script>
+					var ctx = document.getElementById('myChart3');
+
+					var chartGraph = new Chart(ctx, {
+						type: 'pie',
+						data:{
+							labels:["Erros", "Alertas"],
+							datasets:[{
+								data: [24, 12],
+								backgroundColor: ["#FF0000", "#FFFF00"]
+							}]
+						}
+					});
+				</script>
+			</section>
+
+			<section>
+				<h4>Grupo 4 - Kennety</h4>
+				<div class="chart-container">
+					<canvas id="myChart4" width="200" height="200"></canvas>
+				</div>
+
+				<script>
+					var ctx = document.getElementById('myChart4');
+
+					var chartGraph = new Chart(ctx, {
+						type: 'pie',
+						data:{
+							labels:["Erros", "Alertas"],
+							datasets:[{
+								data: [6, 30],
+								backgroundColor: ["#FF0000", "#FFFF00"]
+							}]
+						}
+					});
+				</script>
+			</section>
+
+			<section>
+				<h4>Grupo 5 - Andrew</h4>
+				<div class="chart-container">
+					<canvas id="myChart5" width="200" height="200"></canvas>
+				</div>
+
+				<script>
+					var ctx = document.getElementById('myChart5');
+
+					var chartGraph = new Chart(ctx, {
+						type: 'pie',
+						data:{
+							labels:["Erros", "Alertas"],
+							datasets:[{
+								data: [1, 0],
+								backgroundColor: ["#FF0000", "#FFFF00"]
+							}]
+						}
+					});
+				</script>
+			</section>
+
+			<section>
+				<h4>Grupo 6 - Gyan</h4>
+				<div class="chart-container">
+					<canvas id="myChart6" width="200" height="200"></canvas>
+				</div>
+
+				<script>
+					var ctx = document.getElementById('myChart6');
+
+					var chartGraph = new Chart(ctx, {
+						type: 'pie',
+						data:{
+							labels:["Erros", "Alertas"],
+							datasets:[{
+								data: [1, 0],
+								backgroundColor: ["#FF0000", "#FFFF00"]
+							}]
+						}
+					});
+				</script>
+			</section>
+
+			<section>
+				<h4>Grupo 7 - Rodolfo</h4>
+				<div class="chart-container">
+					<canvas id="myChart7" width="200" height="200"></canvas>
+				</div>
+
+				<script>
+					var ctx = document.getElementById('myChart7');
+
+					var chartGraph = new Chart(ctx, {
+						type: 'pie',
+						data:{
+							labels:["Erros", "Alertas"],
+							datasets:[{
+								data: [3, 14],
+								backgroundColor: ["#FF0000", "#FFFF00"]
+							}]
+						}
+					});
+				</script>
+			</section>
+
+			<section>
+				<h4>Grupo 8 - Neto e Rickson</h4>
+				<div class="chart-container">
+					<canvas id="myChart8" width="200" height="200"></canvas>
+				</div>
+
+				<script>
+					var ctx = document.getElementById('myChart8');
+
+					var chartGraph = new Chart(ctx, {
+						type: 'pie',
+						data:{
+							labels:["Erros", "Alertas"],
+							datasets:[{
+								data: [31, 6],
+								backgroundColor: ["#FF0000", "#FFFF00"]
+							}]
+						}
+					});
+				</script>
+			</section>
+
+			<section>
+				<h4>Grupo 9 - Rebeca e Hugo</h4>
+				<div class="chart-container">
+					<canvas id="myChart9" width="200" height="200"></canvas>
+				</div>
+
+				<script>
+					var ctx = document.getElementById('myChart9');
+
+					var chartGraph = new Chart(ctx, {
+						type: 'pie',
+						data:{
+							labels:["Erros", "Alertas"],
+							datasets:[{
+								data: [63, 34],
+								backgroundColor: ["#FF0000", "#FFFF00"]
+							}]
+						}
+					});
+				</script>
+			</section>
+
+			<section>
+				<h4>Grupo 10 - Lílian e Paulo</h4>
+				<div class="chart-container">
+					<canvas id="myChart10" width="200" height="200"></canvas>
+				</div>
+
+				<script>
+					var ctx = document.getElementById('myChart10');
+
+					var chartGraph = new Chart(ctx, {
+						type: 'pie',
+						data:{
+							labels:["Erros", "Alertas"],
+							datasets:[{
+								data: [59, 34],
+								backgroundColor: ["#FF0000", "#FFFF00"]
+							}]
+						}
+					});
+				</script>
+			</section>
+
+			<section>
+				<h4>Grupo 11 - Rafael e Vínicius</h4>
+				<div class="chart-container">
+					<canvas id="myChart11" width="200" height="200"></canvas>
+				</div>
+
+				<script>
+					var ctx = document.getElementById('myChart11');
+
+					var chartGraph = new Chart(ctx, {
+						type: 'pie',
+						data:{
+							labels:["Erros", "Alertas"],
+							datasets:[{
+								data: [73, 52],
+								backgroundColor: ["#FF0000", "#FFFF00"]
+							}]
+						}
+					});
+				</script>
+			</section>
+
+			<section>
+				<h4>Grupo 12 - Thiago e Arthur</h4>
+				<div class="chart-container">
+					<canvas id="myChart12" width="200" height="200"></canvas>
+				</div>
+
+				<script>
+					var ctx = document.getElementById('myChart12');
+
+					var chartGraph = new Chart(ctx, {
+						type: 'pie',
+						data:{
+							labels:["Erros", "Alertas"],
+							datasets:[{
+								data: [1, 0],
+								backgroundColor: ["#FF0000", "#FFFF00"]
+							}]
+						}
+					});
+				</script>
+			</section>
+
+			<section>
+				<h4>Grupo 13 - Heverton e Gleydson</h4>
+				<div class="chart-container">
+					<canvas id="myChart13" width="200" height="200"></canvas>
+				</div>
+
+				<script>
+					var ctx = document.getElementById('myChart13');
+
+					var chartGraph = new Chart(ctx, {
+						type: 'pie',
+						data:{
+							labels:["Erros", "Alertas"],
+							datasets:[{
+								data: [35, 34],
+								backgroundColor: ["#FF0000", "#FFFF00"]
+							}]
+						}
+					});
+				</script>
+			</section>
+		</main>
+	</body>
+	<section id="pre-footer">
+		<div class="pre-footer-content">
+			<section>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Pellentesque a pretium dolor. Vestibulum porta at enim in gravida.
+					Sed condimentum laoreet massa quis luctus.</p>
+			</section>
+			<section>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Pellentesque a pretium dolor. Vestibulum porta at enim in gravida.
+					Sed condimentum laoreet massa quis luctus.</p>
+			</section>
+			<section>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Pellentesque a pretium dolor. Vestibulum porta at enim in gravida.
+					Sed condimentum laoreet massa quis luctus.</p>
+			</section>
+			<section>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Pellentesque a pretium dolor. Vestibulum porta at enim in gravida.
+					Sed condimentum laoreet massa quis luctus. </p>
+			</section>
+			<section>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Pellentesque a pretium dolor. Vestibulum porta at enim in gravida.
+					Sed condimentum laoreet massa quis luctus.</p>
+			</section>
+			<section>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Pellentesque a pretium dolor. Vestibulum porta at enim in gravida.
+					Sed condimentum laoreet massa quis luctus.</p>
+			</section>
+		</div>
+	</section>
+	<footer>
+		<section class="footer-txt">
+			<p>Portal Unipê Ver. 3.0 . Copyright © Todos os direitos reservados . Design e Projeto - Ascom Unipê</p>
+			<p>IPE Educacional Ltda. Política de Privacidade.</p>
+			<p>CNPJ: 08.679.557/0001-02</p>
+			<p><span>Graças a generosidade da QuestionPro, temos acesso ao seu software de pesquisa online que nos ajuda a acompanhar e analisar informações sobre nossos stakeholders.</span></p>
+		</section>
+		<section style="position: initial">
+			<img src="images/footerimg.jpg" alt="">
+		</section>
+	</footer>
+	<script src="js/script.js"></script>
+</html>
