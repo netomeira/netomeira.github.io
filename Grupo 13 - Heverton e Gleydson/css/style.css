@@ -1,9 +1,9 @@
 @charset "utf-8";
+@charset "utf-8";
 
 *{
 	box-sizing: border-box;
-	transition: 200ms;
-	font-family: Roboto, Verdana, sans-serif;
+	transition: 1s;
 }
 
 .top-site {
@@ -63,10 +63,9 @@ article h2{
 }
 
 main{
-	width: 90%;
+	width: 70%;
 	height: auto;
 	margin: 0 auto;
-	/* display: flex; */
 }
 
 /*@media only screen and (max-width: 1000px) {
@@ -76,6 +75,7 @@ main{
 }*/
 
 body{
+	font-family: 'Lato', sans-serif;
 	margin: 0;
 	padding: 0;
 }
@@ -211,45 +211,66 @@ li a:hover {
   background-color: #111;
 }
 
-article{
-	width: 100%;
-}
-
-article .titulo{
+h2{
+	padding: 5px;
 	margin: 0 auto;
-	width: 75%;
 }
-
-article .grade {
-	float: none;
-	width: 70%;
-	margin: 10px auto;
-}
-
-article div .corpo {
+  
+.row-contact {
+	width: 992px;
 	margin: 0 auto;
-	width: 75%;
+	display: flex;
+	flex-wrap: wrap;
 }
-
-article div p {
-	margin: 10px auto;
-	width:  75%;
-	text-align: justify;
+@media (max-width: 994px) {
+  .row-contact {
+    width: 592px;
+  }
 }
-
-article div p img {
-	display: block;
-  	margin: 10px auto;
-	width: 15%;
-  	height: auto;
+@media (max-width: 610px) {
+  .row-contact {
+    width: 100%;
+	flex-direction: column;
+  }
 }
-
-article div p .tutorial {
-	display: block;
-	margin: 10px auto;
-	width: 75%;
-	max-width: 100%;
-	height: auto;
-	background-color: white;
-  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.col-contact {
+  background-color: rgba(0,0,0,.05);
+  padding: 5px;
+  border-radius: 4px;
+  margin: 3px;
+  width: 302px;
+  vertical-align: top;
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 994px) {
+  .col-contact {
+	width: 280px;
+  }
+}
+@media (max-width: 610px) {
+  .col-contact {
+    width: 100%;
+  }
+}
+.col-contact figure{
+  margin: 5px;
+}
+.col-contact img{
+  max-width: 70px;
+  border-radius: 40px;
+}
+.col-contact .detail-contact{
+  margin-left:5px;
+}
+.col-contact .detail-contact h4{
+  margin:5px;
+}
+.col-contact .detail-contact p{
+  font-size: 12px;
+  margin:5px;
+}
+.chart-container{
+	width: 300px;
+	height: 300px;
 }

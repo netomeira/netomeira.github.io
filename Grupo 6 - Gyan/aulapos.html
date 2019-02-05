@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Tutorial de Propriedades CSS</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="aulapos.css"/>
+</head>
+
+<header>
+	<div class="top-site">
+		<section class="top">
+			<h1><img src="_imagens/logo.png" alt=""></h1>
+		</section>
+		<section class="top">
+			<p></p>
+		</section>
+		<section class="top">
+			<input class="item" type="search" placeholder="Buscar"></div>
+		</section>
+		</section>
+	</div>
+</header>
+<section class="banner">
+</section>
+
+<body>
+
+	<main>
+		<h1>Propriedades do CSS3</h1>
+
+		<h2>O CSS conta com muitas propriedades para formatação do estilo de uma página. O menu abaixo irá direciona-lo, para o tutorial de algumas tags básicas no CSS3</h2>
+		
+		<section>
+			
+			<article class="artigo">
+				<details class="sumario">
+					<summary class="titulo-sum"><strong>Width</strong></summary>
+
+					<p>
+						<strong>A propriedade CSS width determina a largura da área de conteúdo de um elemento</strong>. A área de conteúdo fica dentro do preenchimento, da borda, e da margem de um elemento.
+					</p>
+
+					<p>
+						O valor inicial (padrão) desta propriedade é auto. A largura inicial do box é igual à largura total do seu elemento-pai. Valores declarados com uso de porcentagem são calculados em relação à largura (width) do bloco de conteúdo (o elemento-pai do box).
+					</p>
+
+					<p>
+						Não é válido declarar valores negativos para width.<br>
+						Na prática usam-se as propriedades min-width e max-width em conjunto com a propriedade width com a finalidade de estabelecer valores mínimo e máximo para uma largura definida em porcentagem.
+					</p><br>
+
+					<ul>
+						<p><strong>Valores válidos para a propriedades que definem larguras:</strong></p>
+
+						<li><b>Comprimento:</b> um valor CSS para comprimento (px, em, pt, etc)</li>
+						<li><b>Porcentagem:</b> um valor expressso em porcentagem;</li>
+						<li><b>Auto:</b> um valor que depende dos valores de outras propriedades;</li>
+
+					</ul><br>
+
+					<details>
+						<summary><b>Width:</b> auto</summary>
+						<div class="imagem">
+							<figure>
+								<img src="_imagens/width-auto.jpg" alt="imagem exemplo do uso do width-auto">
+							</figure>
+						</div>
+					</details>
+
+					<details>
+						<summary><b>Width: </b>porcentagem</summary>
+						<div class="imagem">
+							<figure>
+								<img src="_imagens/width-porcentagem.jpg" alt="imagem exemplo do uso do width em porcentagem">
+							</figure>
+						</div>
+					</details>
+
+					<details>
+							<summary><b>Width:</b> px</summary>
+						<div class="imagem">		
+							<figure>
+								<img src="_imagens/width-px.jpg" alt="imagem exemplo do uso do width em pixel">
+							</figure>
+						</div>
+					</details>
+				</details>
+			</article>
+			
+			<article class="artigo">
+				<details>
+						<summary><strong>Height</strong></summary>
+	
+						<p>
+							<strong>As propriedades height, min-height e max-height se destinam a definir a altura dos boxes.</strong>
+						</p>
+						<p class="topicos">
+							<strong>Valores válidos para a propriedades que definem alturas</strong>
+
+							<ul>
+								<li>
+									<b>Comprimento:</b> um valor CSS para comprimento (px, em, pt, etc)
+								</li>
+
+								<li>
+									<b>Porcentagem:</b> um valor expressso em porcentagem;
+								</li>
+
+								<li>
+									<b>Auto:</b> um valor que depende dos conteúdos inseridos no box (valor inicial da propriedade);
+								</li>
+							</ul>
+						</p>
+
+						<p>
+							Valores declarados com uso de porcentagem são calculados em relação à altura (height) do bloco de conteúdo (o elemento-pai do box).
+
+							<strong>Não é válido declarar valores negativos para height.</strong>
+
+							Na prática usam-se as propriedades min-height e max-height em conjunto com a propriedade height com a finalidade de estabelecer valores mínimo e máximo para uma altura definida em porcentagem.
+						</p>
+						<!-- ISSO VAI ESTAR NA IMAGEM EM QUESTÃO QUANDO ELA FOR EXPANDIDA
+
+							Nota: A altura definida em porcentagem tem como base de cálculo a altura do elemento-pai e para que funcione é preciso que a altura do elemento-pai seja explicitamente definida.
+
+							 -->
+
+							<details>
+								<summary><b>Heigth:</b> auto</summary>
+								<div class="imagem">
+									<figure>
+										<img src="_imagens/height-auto.jpg" alt="imagem exemplo do uso do height-auto">
+									</figure>
+								</div>
+							</details>
+
+							<details>
+								<summary><b>Heigth: </b>porcentagem</summary>
+								<div class="imagem">
+									<figure>
+										<img src="_imagens/height-porcentagem.jpg" alt="imagem exemplo do uso do height em porcentagem">
+									</figure>
+								</div>
+							</details>
+
+							<details>
+								<summary><b>Heigth:</b> px</summary>
+									<div class="imagem">		
+										<figure>
+											<img src="_imagens/height-px.jpg" alt="imagem exemplo do uso do height em px">
+										</figure>
+									</div>
+							</details>
+						 </details>
+				</article>
+			
+
+			<article class="artigo">
+				<details>
+					<summary><strong>Float</strong></summary>
+					<p>
+						A propriedade float do CSS determina que um elemento deve ser retirado do seu fluxo normal e colocado ao longo do lado direito ou esquerdo do seu containêr, onde textos  e elementos em linha irão se posicionar ao seu redor. Um elemento flutuante é um tipo de elemento cujo valor de float é diferente de none.
+					</p>
+
+						<p class="topicos">
+							<details>
+								<summary><strong>Valores válidos para a propriedade float</strong></summary><br>
+								<ul>
+									<li>
+										<b>left:</b> É uma palavra-chave que indica que o elemento deve flutuar à esquerda do bloco.
+									</li>
+
+									<li>
+										<b>right:</b> É uma palavra-chave que indica que o elemento deve flutuar à direita do bloco.
+									</li>
+
+									<li>
+										<b>none:</b> É uma palavra-chave que indica que o elemtno não deve flutuar.
+									</li>
+
+									<li>
+										<b>inline-start:</b> É uma palavra-chave que indica que o elemento deve flutuar no lado inicial do seu bloco, ou seja, o lado esquerdo em scripts ltr e no direito em scripts rtl.
+									</li>
+
+									<li>
+										<b>inline-end:</b> É uma palavra-chave que indica que o elemento deve flutuar no lado final do seu bloco, ou seja, o lado direito em scripts ltr e no esquerdo em scripts rtl.
+									</li>
+								</ul>
+							</details>
+						</p>
+
+
+						<p>
+							Quando um elemento é flutuado ele é retirado do seu fluxo normal no documento. Ele é reposicionado à esquerda ou à direita até tocar a borda do seu próprio box ou outro elemento flutuante.</p>
+
+						<div class="imagem">
+								<figure>
+									<figcaption>Exemplo de Float: left</figcaption>
+									<img src="_imagens/float-left.jpg" alt="imagem exemplo do uso do float">
+								</figure>
+							</div>
+						
+					</ul>
+				</details>
+			</article>
+			
+			<article class="artigo">
+				<details>
+				<summary><strong>Font</strong></summary>
+
+				<p>
+					As propriedades para estilização de fontes, definem os diferentes aspectos de apresentação dos glifos (letras e caracteres) que compõem os conteúdos textuais dos diferentes elementos da marcação HTML.
+				</p>
+				<p>
+					As propriedades básicas para estilizar fontes que serão estudadas neste tutorial são as listadas a seguir:
+				</p>
+
+				<p>
+					<details>
+						<summary><strong>Valores válidos para as propriedades da fonte:</strong></summary>
+					<ul>
+						
+							<details>
+							<summary><b>Color:</b></summary><br>
+								<ol>
+									<li>
+										código hexadecimal: #ffc6d9
+									</li>
+										
+									<li>
+										código rgb: rgb(255,235,0)
+									</li>
+
+									<li>
+										código rgba: rgb(255,235,0, 0.7)
+									</li>
+
+									<li>
+										código hsl: hsl(210,100%,40%)
+									</li>
+
+									<li>
+										código hsla: hsla(155,80%,35%,0.4)
+									</li>
+
+									<li>
+										palavra-chave: red, blue, green...etc
+									</li>
+
+									<li>
+										transparente: transparent
+									</li>
+								</ol>
+
+								<div class="imagem">
+									<figure>
+										<img src="_imagens/font-color.jpg" alt="imagem exemplo do uso do font color">
+									</figure>
+								</div>
+							</details>
+						
+
+						
+							<details>
+							<summary><b>font-family:</b> </summary><br>
+								<ol>
+									<li>
+										nome da família de fonte: define-se pelo nome da fonte, 
+										exemplos: "verdana", "helvetica", "arial", etc.
+									</li>
+									<li>
+										nome da família genérica: define-se pelo nome genérico da fonte, 
+										exemplos: "serif", "sans-serif", "cursive", etc.
+									</li>
+								</ol>
+
+								<div class="imagem">
+									<figure>
+										<img src="_imagens/font-family.jpg" alt="imagem exemplo do uso do font font-family"> 
+									</figure>
+								</div>
+
+							</details>
+						
+
+						
+							<details>
+								<summary><b>font-size:</b> </summary>
+
+									<ol>
+										<li>
+											xx-small
+										</li>
+											
+										<li>
+											x-small
+										</li>
+											
+										<li>
+											small
+										</li>
+											
+										<li>
+											medium
+										</li>
+											
+										<li>
+											large
+										</li>
+											
+										<li>
+											x-large
+										</li>
+
+										<li>
+											xx-large
+										</li>
+
+										<li>
+											smaller
+										</li>
+
+										<li>
+											larger
+										</li>
+
+										<li>
+											length: medida CSS de comprimento,
+											exemplos: px, em, rem, % (porcentagem) ...
+										</li>
+									</ol>
+
+									<div class="imagem">
+										<figure>
+											<img src="_imagens/font-size.jpg" alt="imagem exemplo do uso do font-size">
+										</figure>
+									</div>
+						</details>
+						
+
+						
+							<details>
+								<summary><b>font-style:</b> </summary>
+
+									<ol>
+										<li>
+											normal: fonte normal (em pé)
+										</li>
+
+										<li>
+											italic: fonte inclinada
+										</li>
+
+										<li>
+											oblique: fonte obliqua
+										</li>
+									</ol>
+
+									<div class="imagem">
+										<figure>
+											<img src="_imagens/font-style.jpg" alt="imagem exemplo do uso do font-style">
+										</figure>
+									</div>
+								</details>
+							
+
+							
+								<details>
+									<summary><b>font-variant:</b></summary>
+
+										<ol>
+											<li>
+												normal: fonte normal
+											</li>
+
+											<li>
+												small-caps: transforma em maiúsculas de menor altura
+											</li>
+										</ol>
+									<div class="imagem">
+										<figure>
+											<img src="_imagens/font-variant.jpg" alt="imagem exemplo do uso do font-variant">
+										</figure>
+									</div>
+
+								</details>
+
+						
+						
+					</ul>
+
+						</details>
+				</p>
+
+				</details>
+			</article>
+
+			<article class="artigo">
+				<details>
+					<summary><strong>Background</strong></summary>
+
+					<p>
+						As propriedades CSS destinadas a estilizar o fundo de um box Estão listadas e descritas sumariamente a seguir.
+					</p>
+
+					<strong>Por padrão todas as imagens de background por padrão estão com repeat. Você verá a seguir</strong>
+
+				<p>
+					<strong>Valores válidos para as propriedades destinadas a estilizar o fundo de um box HTML</strong>
+				</p>
+							<details>
+								<summary><b>background-color: define a cor do fundo</b></summary>
+								<ol>
+									<li>
+										código hexadecimal: #ffc6d9
+									</li>
+
+									<li>
+										código rgb: rgb(255,235,0)
+									</li>
+
+									<li>
+										código rgba: rgb(255,235,0, 0.7)
+									</li>
+
+									<li>
+										código hsl: hsl(210,100%,40%)
+									</li>
+
+									<li>
+										código hsla: hsla(155,80%,35%,0.4)
+									</li>
+
+									<li>
+										palavra-chave: red, blue, green...etc
+									</li>
+
+									<li>
+										transparente: transparent
+									</li>
+								</ol>
+
+								<div class="imagem">
+										<figure>
+											<img src="_imagens/background-color.jpg" alt="imagem exemplo do uso do background-color">
+										</figure>
+									</div>
+
+							</details>
+
+							<details>
+								<summary><b>background-image: define uma imagem de fundo</b></summary>
+								<ol>
+									<li>
+										URL: url(caminho/imagem.gif)
+									</li>
+										
+									<li>
+										URL: url('caminho/imagem.gif')
+									</li>
+
+									<li>
+										URL: url("caminho/imagem.gif")
+									</li>
+
+									<li>
+										Gradiente linear: linear-gradient(45deg, blue, red)
+									</li>
+
+									<li>
+										Gradiente radial: radial-gradient(20px 50px, green, blue, red)
+									</li>
+								</ol>
+
+								<div class="imagem">
+										<figure>
+											<img src="_imagens/background-image.jpg" alt="imagem exemplo do uso do background-image">
+										</figure>
+								</div>
+							</details>
+
+							<details>
+								<summary><b>background-repeat: define a maneira como a imagem de fundo é posicionada</b></summary>
+								<ol>
+									<li>
+										<details>
+											<summary>imagem não repete: no-repeat</summary>
+												<div class="imagem">
+													<figure>
+														<img src="_imagens/background-no-repeat.jpg" alt="imagem exemplo do uso background-no-repeat">
+													</figure>
+												</div>
+										</details>
+									</li>
+
+									<li>
+										<details>
+										<summary>imagem repete na vertical: repeat-y</summary>
+											<div class="imagem">
+												<figure>
+													<img src="_imagens/background-repea-vert.jpg" alt="imagem exemplo do uso do background-repeat-vertical">
+												</figure>
+											</div>
+									</li>
+
+									<li>
+										<details>
+											<summary>imagem repete na horizontal: repeat-x</summary>
+
+											<div class="imagem">
+											<figure>
+												<img src="_imagens/background-repeat-hor" alt = "jpg background-repeat-horizontal">
+											</figure>
+										</div>
+										</details>
+									</li>
+
+									
+								</ol>
+
+
+							</details>
+
+							<details>
+								<summary><b>background-attachment: define se a imagem de fundo "rola" ou não com a tela</b></summary>
+
+								<ol>
+									<li>
+										imagem permanece fixa em relação à viewport (janela do navegador) e não rola juntamente com o conteúdo: fixed
+									</li>
+
+									<li>
+										imagem não permanece fixa em relação à viewport (janela do navegador) e rola juntamente com o conteúdo - este é o valor padrão: scroll
+									</li>
+
+									<li>
+										imagem permanece fixa em relação à viewport (janela do navegador) mas quando aplicada ao box de um elemento rola juntamente com o conteúdo se o elemento tiver um mecanismo de rolagem definido por overflow: scroll: local
+									</li>
+								</ol>
+
+								<div class="imagem">
+									<figure>
+										<img src="_imagens/background-attachment.gif" alt="imagem exemplo do uso do background-attachment">
+									</figure>
+								</div>
+							</details>
+
+							<details>
+								<summary><b>background-position: define como e onde a imagem de fundo é posicionada</b></summary>
+								<ol>
+									<li>
+										Xpx Ypx
+									</li>
+
+									<li>
+										X% Y%
+									</li>
+
+									<li>
+										top left
+									</li>
+
+									<li>
+										top center
+									</li>
+									<li>
+										top right
+									</li>
+
+									<li>
+										center left
+									</li>
+
+									<li>
+										center center
+									</li>
+
+									<li>
+										center right
+									</li>
+
+									<li>
+										bottom left
+									</li>
+
+									<li>
+										bottom center
+									</li>
+
+									<li>
+										bottom right
+									</li>
+
+									<li>
+										top
+									</li>
+
+									<li>
+										right
+									</li>
+
+									<li>
+										bottom
+									</li>
+
+									<li>
+										left
+									</li>
+								</ol>
+
+								<div class="imagem">
+									<figure>
+										<img src="_imagens/background-position-px.jpg" alt="imagem exemplo do uso do background-position em px">
+									</figure>
+								</div>
+							</details>
+							
+						</details>
+			</article>
+
+			<article class="artigo">
+				<details>
+					<summary><strong>Border</strong></summary>
+
+					<p>
+						As propriedades para as bordas, definem as características das quatro bordas de um elemento HTML que são as listadas a seguir:
+					</p>
+
+					<!-- Imagem das bordas https://www.maujor.com/tutorial/propriedades-css-para-estilizacao-de-bordas.php-->
+
+					<p><strong>Valores válidos para as propriedades das bordas</strong></p>
+
+					
+						<details>
+							<summary><b>color:</b></summary>
+
+							<ol>
+								<li>
+									código hexadecimal: #ffc6d9
+								</li>
+
+								<li>
+									código rgb: rgb(255,235,0)
+								</li>
+										
+								<li>
+									código rgba: rgb(255,235,0, 0.7)
+								</li>
+
+								<li>
+									código hsl: hsl(210,100%,40%)
+								</li>
+										
+								<li>
+									código hsla: hsla(155,80%,35%,0.4)
+								</li>
+
+								<li>
+									palavra-chave: red, blue, green...etc
+								</li>
+
+								<li>
+									transparente: transparent
+								</li>
+							</ol>
+						</details>
+					
+
+						<details>
+
+							<summary><b>style:</b></summary>
+
+							<ol>
+								<li>
+									none: nenhuma borda
+								</li>
+
+								<li>
+									hidden: equivalente a none
+								</li>
+									
+								<li>
+									dotted: borda pontilhada
+								</li>
+
+								<li>
+									dashed: borda tracejada
+								</li>
+									
+								<li>
+									solid: borda contínua
+								</li>
+
+								<li>
+									double: borda dupla
+								</li>
+
+								<li>
+									groove: borda entalhada
+								</li>
+
+								<li>
+									ridge: borda em ressalto
+								</li>
+
+								<li>
+									inset: borda em baixo relevo
+								</li>
+
+								<li>
+									outset: borda em alto relevo
+								</li>
+
+							</ol>
+						</details>	
+
+						<details>
+							<summary><b>width:</b></summary> 
+
+								<ol>
+									<li>
+										thin: borda fina
+									</li>
+
+									<li>
+										medium: borda média
+									</li>
+										
+									<li>
+										thick: borda grossa
+									</li>
+
+									<li>
+										length: unidade de medida CSS (px, pt, em, cm, ...)
+									</li>
+			
+								</ol>
+						</details>
+						<div class="imagem">
+									<figure>
+										<img src="_imagens/border-tudo.jpg" alt="imagem exemplo do uso do Border">
+									</figure>
+							</div>
+
+					</details>
+			</article>
+
+			<article class="artigo">
+				<details>
+				<summary><strong>Margin</strong></summary>
+				<p>
+					As propriedades para as margens, definem a dimensão de cada uma das quatro margens de um elemento HTML e são as listadas a seguir:
+				</p>
+
+
+				<p><strong>Valores válidos para as propriedades da margem:</strong></p>
+
+					<ul>
+						<li>
+							auto: margens laterais iguais (para centrar na horizontal elementos nível de bloco)
+						</li>
+
+						<li>
+							comprimento: um valor CSS para comprimento (px, em, pt, etc)
+						</li>
+
+						<li>
+							porcentagem: um valor expressso em porcentagem;
+						</li>
+					</ul>
+
+					<details>
+							<summary><b>margin-top: define a margem superior</b></summary>
+							<ol>
+								
+									<div class="imagem">
+										<figure>
+											<img src="_imagens/margin-top.jpg" alt="imagem exemplo do uso do margin-top">
+										</figure>
+									</div>
+								
+							</ol>
+					</details>
+
+					<details>
+							<summary><b>margin-right: define a margem superior</b></summary>
+							<ol>
+								
+									<div class="imagem">
+										<figure>
+											<img src="_imagens/margin-right.jpg" alt="imagem exemplo do uso do margin-right">
+										</figure>
+									</div>
+								
+							</ol>
+					</details>
+
+					<details>
+							<summary><b>margin-bottom: define a margem inferior</b></summary>
+							<ol>
+								
+									<div class="imagem">
+										<figure>
+											<img src="_imagens/margin-bottom.jpg" alt="imagem exemplo do uso do margin-bottom">
+										</figure>
+									</div>
+								
+							</ol>
+					</details>
+
+					<details>
+							<summary><b>margin-left: define a margem esquerda</b></summary>
+							<ol>
+								
+									<div class="imagem">
+										<figure>
+											<img src="_imagens/margin-left.jpg" alt="imagem exemplo do uso do margin-left">
+										</figure>
+									</div>
+								
+							</ol>
+					</details>
+
+					<details>
+							<summary><b>margin: maneira abreviada de definir as 4 margens</b></summary>
+							<ol>
+								
+									<div class="imagem">
+										<figure>
+											<img src="_imagens/margin.jpg" alt="imagem exemplo do uso do margin">
+										</figure>
+									</div>
+								
+							</ol>
+					</details>
+
+				</details>
+			</article>
+
+			<article class="artigo">
+				<details>
+				<summary><strong>Padding</strong></summary>
+
+				<p>
+					A propriedade padding se destina a criar um espaçamento interno em um um box entre seus 4 lados e a área de conteúdo do box.
+				</p>
+
+				<p>
+					As propriedades para declarar padding, definem a dimensão de cada uma dos quatro espaçamentos entre a área das bordas e a área de conteúdo de um elemento HTML e são as listadas a seguir:
+				</p>
+				<!-- Quadro propriedades css https://www.maujor.com/tutorial/propriedade-css-padding.php-->
+
+				<p><strong>Valores válidos para as propriedades de padding:</strong></p>
+
+					<ul>
+						<li>
+							comprimento: um valor CSS para comprimento (px, em, pt, etc)
+						</li>
+
+						<li>
+							porcentagem: um valor expressso em porcentagem;
+						</li>
+					</ul>
+
+					<p>
+						Valores declarados com uso de porcentagem são calculados, para os quatro lados do box, tomando-se a porcentagem em relação à largura (width) do box.
+					</p>
+
+					<p>
+						Não é válido declarar valores negativos para padding.
+					</p>
+
+					<details>
+							<summary><b>padding-top:</b> define o espaçamento superior</summary>
+							<ol>
+								
+									<div class="imagem">
+										<figure>
+											<img src="_imagens/padding-top.jpg" alt="imagem exemplo do uso do padding-top">
+										</figure>
+									</div>
+								
+							</ol>
+					</details>
+
+					<details>
+							<summary><b>padding-right:</b> define o espaçamento à direita</summary>
+							<ol>
+								
+									<div class="imagem">
+										<figure>
+											<img src="_imagens/padding-right.jpg" alt="imagem exemplo do uso do padding-right">
+										</figure>
+									</div>
+								
+							</ol>
+					</details>
+
+					<details>
+							<summary><b>padding-bottom:</b> define o espaçamento inferior</summary>
+							<ol>
+								
+									<div class="imagem">
+										<figure>
+											<img src="_imagens/padding-bottom.jpg" alt="imagem exemplo do uso do padding-bottom">
+										</figure>
+									</div>
+								
+							</ol>
+					</details>
+
+					<details>
+							<summary><b>padding-left:</b> define o espaçamento à esquerda</summary>
+							<ol>
+								
+									<div class="imagem">
+										<figure>
+											<img src="_imagens/padding-left.jpg" alt="imagem exemplo do uso do padding-left">
+										</figure>
+									</div>
+								
+							</ol>
+					</details>
+
+					<details>
+							<summary><b>padding:</b> maneira abreviada de definir os 4 espaçamentos</summary>
+							<ol>
+								
+									<div class="imagem">
+										<figure>
+											<img src="_imagens/padding.jpg" alt="imagem exemplo do uso do padding">
+										</figure>
+									</div>
+								
+							</ol>
+					</details>
+
+					</details>
+				</article>
+
+			<article class="artigo">
+				<details>
+				<summary><strong>Text-align</strong></summary>
+				<p>
+					Esta propriedade destina-se a definir o alinhamento horizontal do texto. Trata-se de uma propriedade herdada.
+				</p>
+
+				<p>
+					<strong>Os valores possíveis para esta propriedade são.</strong>
+				</p>
+
+				<ul>
+					<details>	
+							<summary><b>left:</b> Alinha o texto à esquerda do box. Este é o valor inicial (ou default).</summary>
+
+								<div class="imagem">
+											<figure>
+												<img src="_imagens/text-left.jpg" alt="imagem exemplo do uso do text-left">
+											</figure>
+										</div>
+					</details>
+
+					<details>	
+							<summary><b>right:</b> Alinha o texto à direita do box.</summary>
+						
+
+								<div class="imagem">
+										<figure>
+											<img src="_imagens/text-right.jpg" alt="imagem exemplo do uso do text-right">
+										</figure>
+									</div>
+					</details>
+
+					<details>
+							<summary><b>center:</b> Alinha o texto no centro do box.</summary>
+						
+								<div class="imagem">
+									<figure>
+										<img src="_imagens/text-center.jpg" alt="imagem exemplo do uso do text-center">
+									</figure>
+								</div>
+					</details>
+
+					<details>
+							<summary><b>justify:</b> Alinha o texto de modo que cada linha estenda-se da esquerda à direita do box.</summary>
+						
+							<div class="imagem">
+									<figure>
+										<img src="_imagens/text-justify.jpg" alt="imagem exemplo do uso do text-justify">
+									</figure>
+								</div>
+					</details>
+					<details>
+						<summary><b>inherit:</b> O valor do alinhamento do texto é herdado.</summary>
+								<div class="imagem">
+									<figure>
+										<img src="_imagens/text-inherit" alt="imagem exemplo do uso do text-inherit">
+									</figure>
+								</div>
+					</details>
+
+					</ul>
+
+				
+				</details>
+
+			</article>
+
+			<article class="artigo">
+				<details>
+					<summary><strong>Opacity</strong></summary>
+					<p>
+						O efeito obtido com aplicação desta função de filtragem é o de aplicar opacidade na imagem. Os valores CSS possíveis para o parâmetro desta função são a porcentagem ou um número expressando uma porcentagem. Valores negativos são inválidos. O valor igual a 0% ou 0 resulta em imagem totalmente transparente e o valor igual a 100% ou 1 é o valor padrão, isto é, a imagem original. Valores maiores que 100% são permitidos mas causam o mesmo efeito que o valor 100% ou 1.
+					</p>
+
+					<p>
+						O exemplo mostrado a seguir esclarece a aplicação deste tipo de filtro
+					</p>
+
+					<div class="imagem">
+						<figure>
+							<img src="_imagens/opacity-1.jpg" alt="imagem exemplo do uso do opacity">
+						</figure>
+					</div>
+
+					<div class="imagem">
+						<figure>
+							<img src="_imagens/opacity.png" alt="imagem exemplo do uso dos efeitos do opacity">
+						</figure>
+					</div>
+
+				</details>
+			</article>
+
+			<article class="artigo">
+				<details>
+					<summary><strong>Display</strong></summary>
+					<p>
+						A propriedade display permite que você defina a maneira como determinado elemento HTML deve ser renderizado.
+					</p>
+					<details>
+						<summary>display: block</summary>
+
+							<p>A declaração display: block faz com que o elemento HTML seja renderizado como bloco, tal como os parágrafos e os cabeçalhos o são. Um bloco contém um espaço em branco tanto em cima como embaixo e não permite outros elementos HTML ao lado, exceto quando tiver sido declarado ao contrário (por exemplo, declarar a propriedade float para o elemento próximo ao bloco).</p>
+
+							<div class="imagem">
+							<figure>
+								<img src="_imagens/display-block.jpg" alt="imagem exemplo do uso do display-block">
+							</figure>
+					</div>
+					</details>
+
+				<details>
+					<summary>display: inline</summary>
+
+					<p>
+						A propriedade display: inline faz com que o elemento HTML seja renderizado inline, dentro do bloco na mesma linha. Quando o elemento encontra-se entre dois blocos ele forma o chamado 'bloco anônimo' e é renderizado com a menor largura possível.
+					</p>
+
+					<div class="imagem">
+							<figure>
+								<img src="_imagens/display-inline.jpg" alt="imagem exemplo do uso do display-inline">
+							</figure>
+					</div>
+				</details>
+
+				<details>
+					<summary>display: none</summary>
+
+					<p>
+						A declaração display: none faz com que o elemento HTML não seja renderizado (assim sendo você não o verá no exemplo a seguir, é o segundo bloco. Ver código fonte).
+					</p>
+						<div class="imagem">
+							<figure>
+								<img src="_imagens/display-none.jpg" alt="imagem exemplo do uso do display-none">
+							</figure>
+					</div>
+				</details>
+				<details>
+					<summary>display: inline-block</summary>
+
+					<p>
+					Nos Explorer 6 e 7 o valor inline-block funciona somente para os elementos HTML que por sejam display: inline.</p>
+
+					<p>No navegador Mozilla você pode usar -moz-inline-box, mas cuidado que este valor não é o mesmo que inline-block, e poderá não funcionar como esperado em determinadas situações.</p>
+
+					<p>Um bloco inline é colocado inline (ou seja, na mesma linha do conteúdo adjacente), mas comporta-se como se fosse um bloco.
+					</p>
+
+					<p>
+						Na prática usamos o valor inline-block quando queremos definir um valor para a propriedade width. Sob certas circunstâncias, alguns navegadores ignoram a propriedade width para elementos inline, então definindo display: inline-block para tais elementos você forçará o navegador a reconhecer o valor definido para a propriedade width.
+					</p>
+
+					<div class="imagem">
+							<figure>
+								<img src="_imagens/display-inline-block.jpg" alt="imagem exemplo do uso do display-inline-block">
+							</figure>
+					</div>
+				</details>
+
+				<details>
+					<summary>display: list-item</summary>
+
+					<p>
+						A propriedade display: list-item faz com que o elemento HTML seja renderizado como um item de lista, isto significa que aparecerá um marcador (bullet) na frente de cada item (tal como acontece com o elemento UL), exceto para o Internet Explorer 5 para Mac que renderiza um número no lugar de um marcador (tal como acontece com o elemento OL). A numeração neste caso apresenta um bug: todos os itens de lista porventura existentes na página contam e em consequência a numeração inicia-se a partir daquela contagem.
+
+						<div class="imagem">
+							<figure>
+								<img src="_imagens/display-list-item.jpg" alt="imagem exemplo do uso do display-list-item">
+							</figure>
+					</div>
+					</p>
+
+			</article>
+		</section>
+	</main>
+
+
+	<footer>
+		<section class="footer-txt">
+			<p>Portal Unipê Ver. 3.0 . Copyright © Todos os direitos reservados . Design e Projeto - Ascom Unipê</p>
+			<p>IPE Educacional Ltda. Política de Privacidade.</p>
+			<p>CNPJ: 08.679.557/0001-02</p>
+			<p><span>Graças a generosidade da QuestionPro, temos acesso ao seu software de pesquisa online que nos ajuda a acompanhar e analisar informações sobre nossos stakeholders.</span></p>
+		</section>
+		<section style="position: initial">
+			<img src="images/footerimg.jpg" alt="">
+		</section>
+	</footer>
+</body>
+</html>
