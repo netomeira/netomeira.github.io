@@ -101,10 +101,10 @@ function getJSONAlunos(){
 			'"descricaoTarefa":"Pág. Notícias", "url":"/Grupo 5 - Andrew/noticias.html"},'+
 
 			'{"id":8, "nome":"Andrew", "grupo":"Grupo 5", "imagem":"images/alunos/default.png",'+
-			'"descricaoTarefa":"Revisão de Integração", "url":"#"},'+
+			'"descricaoTarefa":"Revisão de Integração", "url":""},'+
 
 			'{"id":9, "nome":"Gian", "grupo":"Grupo 6", "imagem":"images/alunos/Grupo6-Gian.png",'+
-			'"descricaoTarefa":"Tutorial Propriedades CSS", "url":"#"},'+
+			'"descricaoTarefa":"Tutorial Propriedades CSS", "url":"/Grupo 6 - Gyan/aulapos.html"},'+
 
 			'{"id":10, "nome":"Rodolfo", "grupo":"Grupo 7", "imagem":"images/alunos/Grupo7-Rodolfo.png",'+
 			'"descricaoTarefa":"Modelo de página", "url":"/Grupo 7 - Rodolfo/index.html"},'+
