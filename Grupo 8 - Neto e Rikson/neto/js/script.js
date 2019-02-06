@@ -140,7 +140,7 @@ function getJSONAlunos(){
 			'"descricaoTarefa":"Pág. de Contatos", "url":"/Grupo 11 - Rafael e Vínicius/contatos.html"},'+
 
 			'{"id":21, "nome":"Thyago", "grupo":"Grupo 12", "imagem":"images/alunos/Grupo12-Thyago.png",'+
-			'"descricaoTarefa":"Tutorial Flex e Grid", "url":"#"},'+
+			'"descricaoTarefa":"Tutorial Flex e Grid", "url":"/Grupo 12 - Thiago e Arthur/index.html"},'+
 		
 			'{"id":22, "nome":"Arthur", "grupo":"Grupo 12", "imagem":"images/alunos/default.png",'+
 			'"descricaoTarefa":"Tutorial Flex e Grid", "url":"/Grupo 12 - Thiago e Arthur/index.html"},'+
