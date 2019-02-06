@@ -209,3 +209,11 @@ li a {
 li a:hover {
   background-color: #111;
 }
+
+.texto{
+	padding-top: 10px;
+	padding-left: 22px;
+	font-size: 12px;
+	text-align: justify;
+	font-family: Helvetica, sans-serif;
+}

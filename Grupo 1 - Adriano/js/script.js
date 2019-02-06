@@ -4,15 +4,24 @@ function insertDisciplina(codigo, nome, carga, id_professor, ementa, referencia)
 		{ tx.executeSql('INSERT INTO DISCIPLINAS (DIS_CODIGO, DIS_NOME_DISCIPLINA, DIS_CARGA_HORARIA, DIS_PRO_CODIGO,  DIS_EMENTA, DIS_REFERENCIA) VALUES ("' + codigo + '","' + nome + '","' + carga + '","' + id_professor + '","' + ementa + '","' + referencia + '")'); });   
 }
 
+function insertDisciplinaAnexo(codigo, codigo_disciplina, descricao, link){ 
+   db.transaction(function (tx) 
+    { 
+    sql = 'INSERT INTO DISCIPLINAS_ANEXOS (DIA_CODIGO, DIA_DIS_CODIGO, DIA_DESCRICAO, DIA_LINK) VALUES ("' 
+          + codigo + '","' + codigo_disciplina + '","' + descricao + '","' + link+ '")';
+        tx.executeSql(sql); 
+      });   
+}
+
 function insertInstituicoes(codigo, nome){ 
  	 db.transaction(function (tx) 
 		{ tx.executeSql('INSERT INTO INSTITUICOES (INS_CODIGO, INS_NOME) VALUES ("' + codigo + '","' + nome + '")'); });   
 }
 
-function insertProfessores(codigo, nome, id_instituicao){ 
+function insertProfessores(codigo, nome, id_instituicao, link){ 
 	
  	 db.transaction(function (tx) 
-		{ tx.executeSql('INSERT INTO PROFESSORES (PRO_CODIGO, PRO_NOME, PRO_INS_CODIGO) VALUES ("' + codigo + '","' + nome + '","' +id_instituicao+'")'); });   
+		{ tx.executeSql('INSERT INTO PROFESSORES (PRO_CODIGO, PRO_NOME, PRO_INS_CODIGO, PRO_LINK) VALUES ("' + codigo + '","' + nome + '","' +id_instituicao+'", "'+link+'")'); });   
 }
 
 document.querySelector('#lista').innerHTML += "<img alt='Carregando dados' border='0' width='200' src='images/carregando.gif' title='Carregando dados! Aguarde...'> <h4>Carregando dados! Aguarde...<h4>"; 
@@ -27,10 +36,17 @@ db.transaction(function (tx)
    });
 
 db.transaction(function (tx) 
+   { tx.executeSql('DROP TABLE DISCIPLINAS_ANEXOS'); 
+   });
+db.transaction(function (tx) 
+   { tx.executeSql('CREATE TABLE IF NOT EXISTS DISCIPLINAS_ANEXOS (DIA_CODIGO unique, DIA_DIS_CODIGO, DIA_DESCRICAO, DIA_LINK)'); 
+   });
+
+db.transaction(function (tx) 
    { tx.executeSql('DROP TABLE PROFESSORES'); 
    });
 db.transaction(function (tx) 
-   { tx.executeSql('CREATE TABLE IF NOT EXISTS PROFESSORES (PRO_CODIGO unique, PRO_NOME, PRO_INS_CODIGO)'); 
+   { tx.executeSql('CREATE TABLE IF NOT EXISTS PROFESSORES (PRO_CODIGO unique, PRO_NOME, PRO_INS_CODIGO, PRO_LINK)'); 
    });
 
 db.transaction(function (tx) 
@@ -39,11 +55,6 @@ db.transaction(function (tx)
 db.transaction(function (tx) 
    { tx.executeSql('CREATE TABLE IF NOT EXISTS INSTITUICOES (INS_CODIGO unique, INS_NOME)'); 
    });
-db.transaction(function (tx) 
-   { tx.executeSql('CREATE TABLE IF NOT EXISTS DISCIPLINAS_REFERENCIAS (REF_DIS_CODIGO, REF_CONTEUDO)'); 
-   });
-
-
 
 insertInstituicoes(1,'Unipê');
 insertInstituicoes(2,'TJ');
@@ -55,23 +66,22 @@ insertInstituicoes(7,'Conductor');
 insertInstituicoes(8,'TriadWorks - Fortaleza');
 insertInstituicoes(9,'Alfa Consultoria');
 
-insertProfessores('1', 'Jeferson Barbosa', '1');
-insertProfessores('2', 'Ms. João Paulo Fechine Sette ', '2');
-insertProfessores('3', 'Ms. Thyago Maia', '3');
-insertProfessores('4', 'Ms. Pedro Amorin', '1');
-insertProfessores('5', 'Esp. Hélio Cardoso', '1');
-insertProfessores('6', 'Neto Cavalcanti', '4');
-insertProfessores('7', 'Esp. Nélio Frazão', '5');
-insertProfessores('8', 'MS. Ivson Santos', '5');
-insertProfessores('9', 'Ms. Samara Martins', '1');
-insertProfessores('10', 'Prof. Dr Rodrigo da Cruz Fujioka', '1');
-insertProfessores('11', 'Ms. Lysiane Couto', '1');
-insertProfessores('12', 'Rafael Ponte', '8');
-insertProfessores('13', 'Esp Carlos Barbosa', '9');
-insertProfessores('14', 'Humberto Junior', '7');
-insertProfessores('15', 'Ms. Gustavo Sávio', '4');
-insertProfessores('16', 'Ms. Pedro Amorin', '4');
-
+insertProfessores('1', 'Jeferson Barbosa', '1', 'http://lattes.cnpq.br/9441692553425964');
+insertProfessores('2', 'Ms. João Paulo Fechine Sette ', '2', 'http://lattes.cnpq.br/3477271592797947');
+insertProfessores('3', 'Ms. Thyago Maia', '3', 'http://lattes.cnpq.br/5322422063512353');
+insertProfessores('4', 'Ms. Pedro Amorin', '1', '');
+insertProfessores('5', 'Esp. Hélio Cardoso', '1', '');
+insertProfessores('6', 'Neto Cavalcanti', '4', 'http://lattes.cnpq.br/7872949807196616');
+insertProfessores('7', 'Esp. Nélio Frazão', '5', '');
+insertProfessores('8', 'MS. Ivson Santos', '5', 'http://lattes.cnpq.br/3762142722427704');
+insertProfessores('9', 'Ms. Samara Martins', '1', '');
+insertProfessores('10', 'Prof. Dr Rodrigo da Cruz Fujioka', '1', 'http://lattes.cnpq.br/0843668802633139');
+insertProfessores('11', 'Ms. Lysiane Couto', '1', '');
+insertProfessores('12', 'Rafael Ponte', '8', 'https://br.linkedin.com/in/rponte');
+insertProfessores('13', 'Esp Carlos Barbosa', '9', '');
+insertProfessores('14', 'Humberto Junior', '7', '');
+insertProfessores('15', 'Ms. Gustavo Sávio', '4', '');
+insertProfessores('16', 'Ms. Pedro Amorin', '4', '');
 
 insertDisciplina('1','Design Think em projetos de sistemas para Web e Startups','16', '1', 'Metodologia de Design (Design Thinking). Experiência de usuário. Pesquisa'+
 'e análise de informações para identificação de oportunidades e possíveis mercados.'+
@@ -87,11 +97,19 @@ insertDisciplina('1','Design Think em projetos de sistemas para Web e Startups',
 'VIANNA ET AL. Design thinking. Disponível em: http://livrodesignthinking.com.br/'+
 'Rio de Janeiro: MJV Press, 2012.');
 
+insertDisciplinaAnexo('1', '1', 'Material principal', 'www.unipro.com.br/mat1.pdf');
+insertDisciplinaAnexo('2', '1', 'Material extra', 'www.unipro.com.br/mat1.pdf');
+
 insertDisciplina('2','Desenvolvimento de Interfaces Web','16', '2',
   'Conceitos Básicos; Desenvolvimento Web com HTML, CSS. Programação front-end  jQuery e Ajax. HTML 5.',
   'Teruel, Evandro Carlos. HTML 5 : guia prático. São Paulo: Erica, 2014. Minha Biblioteca, EBSCOhost (accessed December 20, 2017).'+
 'Miletto, Evandro Manara. 2014. Desenvolvimento de software ii : introdução ao desenvolvimento web com html, css, javascript e php. Porto Alegre: Bookman, 2014. Minha Biblioteca, EBSCOhost (accessed December 20, 2017).'+
 'DUCKETT, Jon. n.d. HTM e CSS. Projeto e construa websites. n.p.: Rio de Janeiro Alta Books 2014, n.d. Catálogo do Centro Universitário de João Pessoa - Unipê, EBSCOhost (accessed December 20, 2017');
+
+insertDisciplinaAnexo('3', '2', 'Slide do curso', 'www.unipro.com.br/se1.pdf');
+insertDisciplinaAnexo('4', '2', 'Vídeos sobre aulas', 'www.unipro.com.br/s2.avi');
+insertDisciplinaAnexo('5', '2', 'Modelos de Páginas', 'www.unipro.com.br/s2.pdf');
+
 insertDisciplina('3','UX User Experience','16', '',
   'Introdução à usabilidade. Usabilidade para sistemas web. Usabilidade x Ergonomia. Critérios e recomendações ergonômicas e de usabilidade. Especificação de requisitos de usabilidade. Prototipação de interfaces web. Técnicas de avaliações de usabilidade em interfaces web. ',
   'Chesnut, Donald, and Kevin Nichols. UX for dummies. n.p.: West Sussex, England : John Wiley & Sons, 2014., 2014. Ebook Central, EBSCOhost (accessed December 20, 2017).');
@@ -213,7 +231,36 @@ function ObtemCabecalho()
   document.querySelector('#cabecalho').innerHTML +=  mensagem;           
           
 }
+var lista_anexos = new Array();
+var iIndice = 0;
+function ObtemAnexos(codigo_disciplina)
+{
+     lista_anexo = lista_anexos[codigo_disciplina];
 
+     if (!lista_anexos[codigo_disciplina]) 
+     {
+       lista_anexo = "Não foi disponibilizado pelo professor os anexos."
+     }
+     return lista_anexo;
+}
+
+db.transaction(function (tx1) { 
+            tx1.executeSql('SELECT * FROM DISCIPLINAS_ANEXOS ORDER BY DIA_DIS_CODIGO', [], function (tx, results) { 
+               var len = results.rows.length, i; 
+               iCodigo = results.rows.item(i).DIA_DIS_CODIGO;
+               sAux = "";
+               for (i = 0; i < len; i++) {                  
+                  lista_anexos[results.rows.item(i).DIA_DIS_CODIGO] = ' ';
+               }
+               for (i = 0; i < len; i++) {    
+                  lista_anexos[results.rows.item(i).DIA_DIS_CODIGO] += '- <a href="'+results.rows.item(i).DIA_LINK + '">' + results.rows.item(i).DIA_DESCRICAO + '</a><br>';
+               }
+               }, null); 
+            
+         });
+
+function principal()
+{
 db.transaction(function (tx) { 
             tx.executeSql('SELECT * FROM DISCIPLINAS LEFT JOIN PROFESSORES ON PRO_CODIGO = DIS_PRO_CODIGO LEFT JOIN INSTITUICOES ON PRO_INS_CODIGO = INS_CODIGO', [], function (tx, results) { 
                var len = results.rows.length, i; 
@@ -222,24 +269,36 @@ db.transaction(function (tx) {
                document.querySelector('#lista').innerHTML = ""; 
                var nome_professor;
                for (i = 0; i < len; i++) { 
-               	if (results.rows.item(i).PRO_NOME == null) {
-               		nome_professor = "Não definido";
-               	}
+                 //              alert("1");
+                if (results.rows.item(i).PRO_NOME == null) {
+                  nome_professor = "Não definido";
+                }
                 else
                 {
-                    nome_professor = results.rows.item(i).PRO_NOME + "("+results.rows.item(i).INS_NOME+")";
-               	}
+                    nome_link = results.rows.item(i).PRO_NOME;
+                    if (results.rows.item(i).PRO_LINK != "") {
+                      nome_link = "<a href='"+results.rows.item(i).PRO_LINK+"' target='_blank'>"+nome_link+"</a>"
+                    }
+                    nome_professor = nome_link + "("+results.rows.item(i).INS_NOME+")";
+                }
 
-                msg = "<details>- Professor: "+nome_professor+ "</b></p>" +
+                msg = "<details><div class='texto'>- Professor: "+nome_professor+ "</div>" +
                   "<summary>"+results.rows.item(i).DIS_CODIGO +" - <b>" + results.rows.item(i).DIS_NOME_DISCIPLINA+"</b></summary>"+
-				          "<p> - Carga Horária:" +  results.rows.item(i).DIS_CARGA_HORARIA+"Hs</p>"+
+				          "<div class='texto'><p> - Carga Horária:" +  results.rows.item(i).DIS_CARGA_HORARIA+"Hs</p>"+
 				          "<p><b>Ementa</b>:<br> " + results.rows.item(i).DIS_EMENTA +
-                  "<br><b>Referências Básicas:</b><br>"+results.rows.item(i).DIS_REFERENCIA + "</p>";
-				        msg += "</details>";
+                  "<br><b>Referências Básicas:</b><br>"+results.rows.item(i).DIS_REFERENCIA + 
+                  "<br><b>Anexos:</b><br>";
+				        msg_temp = ObtemAnexos(results.rows.item(i).DIS_CODIGO);
+                msg = msg + msg_temp;
+                msg += "</div></p></details>";
+
 				        document.querySelector('#lista').innerHTML +=  msg; 
                } 
              ObtemCabecalho();
             }, null); 
          }); 
+}
 
+
+principal();
  
