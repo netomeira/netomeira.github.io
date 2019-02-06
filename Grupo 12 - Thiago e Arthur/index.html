@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css"/>
+		<link rel="stylesheet" href="css/styleBody.css"/>
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+		<script src="js/canvasjs.min.js"></script>
+		<script src="js/piechart.js"></script>
+		<script src="js/livechart.js"></script>
+		<script src="js/jquery.js"></script>
+		<script src="js/hideShow.js"></script>
+		<title>Projeto design de interface</title>
+	</head>
+	<header >
+		<div class="top-site">
+			<section class="top">
+				<h1><img src="images/logo.png" alt=""></h1>
+			</section>
+			<section class="top">
+				<p></p>
+			</section>
+			<section class="top">
+				<input class="item" type="search" placeholder="Buscar"></div>
+			</section>
+			</section>
+		</div>
+	</header>
+	<section class="banner">
+	</section>
+	<nav>
+		<menu>
+			<ul>
+			  <li><a class="active" href="#">Home</a></li>
+			</ul>
+		<menu>
+	</nav>
+	<body>
+			
+			<div id="dropDown"><h1 id="titulo1" onclick="myFunction()">
+				<img id="dropImg" src="images/right.png">
+				Display Grid
+			</h1>
+			<!--INICIO DROPDOWN-->
+				  <div id="hideShow" style="display: none;">
+						<div id="textos">
+							<h4>Grid Container</h4>
+							<p>
+								O Grid Container é a tag que envolve os itens do grid, ao indicar display:
+								 grid, essa tag passa a ser um Grid Container.<br>
+
+								 <p class="link" onclick="window.scrollTo(0,2500)">Exemplos no final da pagina.</p>
+							</p>
+						</div>
+						<!--INICIO GRID-->
+						<section class="grid grid-auto-flow-1">
+							<div class="topicos">
+								<h1>1. display</h1>
+									<p class="fonte">Define o elemento como um grid container.</p>
+									<code>
+											display: grid;<br>
+											// Torna o elemento um grid container.<br><br>
+											display: inline-grid;<br>
+											// Torna o elemento um grid container porém com comportamento inline.<br><br>
+											display: subgrid;<br>
+											// Para grids dentro de grids (ainda não é suportado, porém você pode normalmente colocar display: grid; no grid dentro do grid que funciona).
+									</code>
+							</div>
+
+							<div class="topicos">
+									<h1>2. grid-template-columns</h1>
+										<p class="fonte">Define o número total de colunas que serão criadas no grid..</p>
+										<code>
+											grid-template-columns: 100px 100px 100px 100px;<br>
+											// Quatro colunas de 100px de largura são criadas<br><br>
+											grid-template-columns: 1fr 2fr;<br>
+											// Duas colunas são criadas, sendo a segunda com o dobro do tamanho da primeira. fr é uma unidade fracional.
+											O tamanho do conteúdo é respeitado, ou seja, se o conteúdo na primeira coluna for maior que o da segunda, 
+											a primeira será maior.<br><br>
+											grid-template-columns: minmax(200px, 1fr) 1fr 1fr;<br>
+											// Três colunas são criadas, a primeira terá no mínimo 200px de largura e no máximo
+											 1fr(isso significa que após 200px ela se expande da mesma forma que as outras colunas). 
+											 As outras duas colunas vão ter 1fr.<br><br>
+											grid-template-columns: repeat(3, 1fr);<br>
+											// Cria 3 colunas com 1fr de tamanho. O repeat seria a mesma coisa que escrever 1fr 1fr 1fr.<br><br>
+											grid-template-columns: repeat(auto-fit, minmax(100px, auto));<br>
+											// Cria automaticamente um total de colunas que acomode itens com no mínimo 100px de largura.
+										</code>
+							</div>
+
+							<div class="topicos">
+									<h1>3. grid-template-rows</h1>
+										<p class="fonte">Define a quantidade de linhas no grid.</p>
+										<code>
+												grid-template-rows: 50px 100px 50px 150px<br>
+												// Cria 4 linhas no grid, sendo a primeira com 50px, segunda 100px, terceira 50px 
+												e quarta 150px. Caso o grid necessite de mais linhas, elas terão o tamanho de acordo
+												 com o conteúdo.<br><br>
+												grid-template-rows: 1fr 2fr;<br>
+												// Cria 2 linhas no grid, sendo a segunda com cerca de duas vezes o tamanho da primeira.
+										</code>
+							</div>
+
+							<div class="topicos">
+									<h1>4. grid-template-areas</h1>
+										<p class="fonte">Define áreas específicas no grid. O ponto (.) pode ser utilizado para criar áreas vazias.</p>
+										<code>
+												grid-template-areas: <br>
+												"logo nav nav" <br>
+												"sidenav content advert" <br>
+												"sidenav footer footer";<br>
+												// Cria 3 colunas e 3 linhas. [logo] ocupa a coluna 1, linha 1. [nav] ocupa da coluna 2 a 3, linha 1. [sidenav] ocupa a coluna 1, da linha 2 a 3. [content] ocupa a coluna 2, linha 2. [advert] ocupa a coluna 3, linha 2. [footer] ocupa da coluna 2 a 3, linha 3
+										</code>
+							</div>
+
+							
+					</section>
+					<!--FIM GRID-->
+						<div style="margin-top:10%; margin-right: 5%;">
+								<h1 align="center">Pratique!</h1>
+								<iframe src="https://codepen.io/arthuragd/pen/YBrNpq/?turn_off_js=true" height="800" width="100%">
+									<p>Browser nao suporta iframe</p>
+								</iframe>
+						</div>
+						<!--INICIO BANNER-->
+						<div id="banner">
+							<h1 align="center">Exemplos</h1>
+							<div class="grupo">
+								<div class="slide"> 
+										<h3 style="margin-left: 3%">1. display</h3>
+										<iframe height="400" width="100%" src="https://codepen.io/origamid/embed/NgzWBo?height=400&amp;theme-id=24256&amp;slug-hash=NgzWBo&amp;default-tab=css%2Cresult&amp;user=origamid&amp;embed-version=2&amp;pen-title=flex&amp;editable=true&amp;name=cp_embed_1">
+											<p>Browser nao suporta frame.</p>
+										</iframe>							
+								</div>
+								<div class="slide" style="display: none;">
+									<h3 style="margin-left: 3%">2. grid-template-columns</h3>
+										<iframe height="400" width="100%" src="https://codepen.io/origamid/embed/ZyRYQp?height=400&amp;theme-id=24256&amp;slug-hash=ZyRYQp&amp;default-tab=css%2Cresult&amp;user=origamid&amp;embed-version=2&amp;pen-title=flex-direction&amp;editable=true&amp;name=cp_embed_2">
+											<p>Browser nao suporta frame.</p>
+										</iframe>	
+								</div>
+								<div class="slide" style="display: none;">
+									<h3 style="margin-left: 3%">3. grid-template-rows</h3>
+										<iframe height="400" width="100%" src="https://codepen.io/origamid/embed/gRKpow?height=400&amp;theme-id=24256&amp;slug-hash=gRKpow&amp;default-tab=css%2Cresult&amp;user=origamid&amp;embed-version=2&amp;pen-title=flex-wrap&amp;editable=true&amp;name=cp_embed_3">
+											<p>Browser nao suporta frame.</p>
+										</iframe>	
+								</div>
+								<div class="slide" style="display: none;">
+									<h3 style="margin-left: 3%">4. grid-template-areas</h3>
+										<iframe height="400" width="100%" src="https://codepen.io/origamid/embed/owyjxz?height=400&amp;theme-id=24256&amp;slug-hash=owyjxz&amp;default-tab=css%2Cresult&amp;user=origamid&amp;embed-version=2&amp;pen-title=flex-wrap&amp;editable=true&amp;name=cp_embed_4"> 
+											<p>Browser nao suporta frame.</p>
+										</iframe>		
+									</div>
+								<div class="butoes">
+									<button onclick="plusDivs(-1)">&#10094;</button>
+									<button onclick="plusDivs(1)">&#10095;</button>
+								</div>
+							</div>
+						</div>
+					<!--FIM BANNER-->
+				</div>
+				<!--FIM DROPDOWN-->
+				<!-- FLEX DROPDOWN-->
+				<div id="flex"><h1 id="titulo2" onclick="myFunction2()">
+					<img id="dropImg2" src="images/right.png">
+					FlexBox
+				</h1>
+					<div id="hideShow2" style="display: none;">
+						<div>
+							<div id="textos">								
+								<p>
+									O flexbox foi projetado como um modelo de layout unidimensional, e como um método que poderia oferecer distribuição de espaço entre itens numa interface e capacidades poderosas de alinhamento.<br>
+									<h4>Eixo principal e eixo transversal</h4><br>
+									O eixo principal é definido pela propriedade flex-direction e o eixo transversal corre perpendicular a ele.
+									O <strong>Eixo Principal</strong> tem quatro valores possíveis:<br><br>
+<strong>
+	    <ul>
+		   <li>row</li><br>
+		   <li>row-reverse</li><br>
+		   <li>column</li><br>
+		   <li>column-reverse</li><br>
+		</ul>
+		</strong>		
+		<br><br>
+		<strong>Eixo Transversal</strong><br><br>
+		O eixo transversal se move perpendicularmente ao eixo principal, logo se o seu flex-direction (eixo principal) está definido como row ou row-reverse, o eixo transversal estará na direção das colunas<br><br>
+					
+   
+    
+    
+
+
+								</p>
+
+								
+							</div>
+							<div id="banner">
+									<h1 align="center">Exemplo</h1>
+									<div class="grupo">
+											<p class="codepen" data-height="265" data-theme-id="0" data-default-tab="css,result" data-user="css-tricks" data-slug-hash="EKEYob" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Demo Flexbox 1">
+													<span>See the Pen <a href="https://codepen.io/team/css-tricks/pen/EKEYob/">
+													Demo Flexbox 1</a> by CSS-Tricks (<a href="https://codepen.io/css-tricks">@css-tricks</a>)
+													on <a href="https://codepen.io">CodePen</a>.</span>
+												  </p>
+												  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+									
+									
+									</div>
+									<br>
+									<br>
+									<h1 align="center">Exemplo (Galeria)</h1>
+									<div class="grupo">
+											<p class="codepen" data-height="265" data-theme-id="0" data-default-tab="html,result" data-user="iahello" data-slug-hash="LqjjLe" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Responsive Flexbox Gallery">
+													<span>See the Pen <a href="https://codepen.io/iahello/pen/LqjjLe/">
+													Responsive Flexbox Gallery</a> by Iah Buenacosa (<a href="https://codepen.io/iahello">@iahello</a>)
+													on <a href="https://codepen.io">CodePen</a>.</span>
+												  </p>
+												  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+									
+									</div>
+								</div>
+
+
+						</div>
+					</div>
+				</div>
+				<!-- FIM FLEX DROPDOWN-->
+			</div>
+
+			
+	</body>
+	
+	<footer>
+		<section class="footer-txt">
+			<p>Portal Unipê Ver. 3.0 . Copyright © Todos os direitos reservados . Design e Projeto - Ascom Unipê</p>
+			<p>IPE Educacional Ltda. Política de Privacidade.</p>
+			<p>CNPJ: 08.679.557/0001-02</p>
+			<p><span>Graças a generosidade da QuestionPro, temos acesso ao seu software de pesquisa online que nos ajuda a acompanhar e analisar informações sobre nossos stakeholders.</span></p>
+		</section>
+		<section style="position: initial">
+			<img src="images/footerimg.jpg" alt="">
+		</section>
+	</footer>
+	<script src="js/script.js"></script>
+</html>

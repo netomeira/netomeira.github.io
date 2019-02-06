@@ -101,10 +101,10 @@ function getJSONAlunos(){
 			'"descricaoTarefa":"Pág. Notícias", "url":"/Grupo 5 - Andrew/noticias.html"},'+
 
 			'{"id":8, "nome":"Andrew", "grupo":"Grupo 5", "imagem":"images/alunos/default.png",'+
-			'"descricaoTarefa":"Revisão de Integração", "url":""},'+
+			'"descricaoTarefa":"Revisão de Integração", "url":"#"},'+
 
 			'{"id":9, "nome":"Gian", "grupo":"Grupo 6", "imagem":"images/alunos/Grupo6-Gian.png",'+
-			'"descricaoTarefa":"Tutorial Propriedades CSS", "url":"/Grupo 6 - Gyan/aulapos.html"},'+
+			'"descricaoTarefa":"Tutorial Propriedades CSS", "url":"#"},'+
 
 			'{"id":10, "nome":"Rodolfo", "grupo":"Grupo 7", "imagem":"images/alunos/Grupo7-Rodolfo.png",'+
 			'"descricaoTarefa":"Modelo de página", "url":"/Grupo 7 - Rodolfo/index.html"},'+
@@ -143,7 +143,7 @@ function getJSONAlunos(){
 			'"descricaoTarefa":"Tutorial Flex e Grid", "url":"#"},'+
 		
 			'{"id":22, "nome":"Arthur", "grupo":"Grupo 12", "imagem":"images/alunos/default.png",'+
-			'"descricaoTarefa":"Tutorial Flex e Grid", "url":"/Grupo 12 - Thiago e Arthur/index.html"},'+
+			'"descricaoTarefa":"Tutorial Flex e Grid", "url":"#"},'+
 
 			'{"id":23, "nome":"Gleydson", "grupo":"Grupo 13", "imagem":"images/alunos/Grupo13-Gleydson.png",'+
 			'"descricaoTarefa":"Tutorial SASS", "url":"/Grupo 13 - Heverton e Gleydson/tutorialSASS.html"},'+

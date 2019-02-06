@@ -1,0 +1,70 @@
+#dropImg, #dropImg2{
+    height: 36px;
+    float: left;
+}
+
+#dropDown{
+    margin-left: 15%;
+    margin-top: 2%;
+    margin-bottom: 13%;
+}
+
+#banner{
+    margin-top: 5%;
+   margin-right: 5%;
+}
+
+.butoes{
+    margin-top: 2%;
+    margin-bottom: 3%;
+    margin-left: 50%;
+    float: none;
+}
+
+p.link:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+#titulo1:hover, #titulo2:hover{
+    color: red;
+}
+
+.ativo{
+    color: red;
+}
+
+#textos{
+    width: 500px;
+    font-style: initial;
+    margin-left: 2%;
+}
+
+.grid {
+	display: grid;
+}
+
+.grid-auto-flow-1 {
+    grid-template-columns: 1fr 1fr;
+    margin-right: 5%;
+}
+
+.topicos{
+    margin-top: 5%;
+    margin-right: 5%;
+}
+
+@font-face{
+    font-family: Source Code Pro;
+    src: url(fonts/SourceCodePro-Bold.ttf);
+}
+
+p.fonte{
+    font-family: Source Code Pro;    
+}
+
+code{
+
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;   
+}

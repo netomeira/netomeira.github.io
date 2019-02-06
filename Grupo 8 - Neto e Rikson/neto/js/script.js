@@ -143,7 +143,7 @@ function getJSONAlunos(){
 			'"descricaoTarefa":"Tutorial Flex e Grid", "url":"#"},'+
 		
 			'{"id":22, "nome":"Arthur", "grupo":"Grupo 12", "imagem":"images/alunos/default.png",'+
-			'"descricaoTarefa":"Tutorial Flex e Grid", "url":"#"},'+
+			'"descricaoTarefa":"Tutorial Flex e Grid", "url":"/Grupo 12 - Thiago e Arthur/index.html"},'+
 
 			'{"id":23, "nome":"Gleydson", "grupo":"Grupo 13", "imagem":"images/alunos/Grupo13-Gleydson.png",'+
 			'"descricaoTarefa":"Tutorial SASS", "url":"/Grupo 13 - Heverton e Gleydson/tutorialSASS.html"},'+
