@@ -4,8 +4,13 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/transition-transform-animation.css" />
+	<style>
+		p{
+				text-align: justify;
+			}
+		</style>
 	<title>Projeto design de interface</title>
 </head>
 <header>
@@ -18,83 +23,147 @@
 		</section>
 		<section class="top">
 			<input class="item" type="search" placeholder="Buscar">
-	</div>
-	</section>
-	</section>
+		</section>
 	</div>
 </header>
 <section class="banner">
 </section>
 <nav>
 	<menu>
-		<ul>
+		<ul class="menu-list">
 			<li><a class="active" href="#home">Home</a></li>
 			<li><a href="#">pagina 01</a></li>
 			<li><a href="#">pagina 02</a></li>
 			<li><a href="#">pagina 03</a></li>
 		</ul>
-		<menu>
+	</menu>
 </nav>
 
 <body>
-	<main>
-		<article class="artigo">
-			<div class="titulo">
-				<h1>Tutorial SASS</h1>
-			</div>
-			<div class="corpo">
-				<p>
+	<main id="tutorial">
 
-					O SASS foi criado com o objetivo de trazer para o css benefícios que ainda não existem na linguagem como:
-					variáveis, aninhamento, mixins, herança, entre outros. Os arquivos SASS tem a extensão .SCSS
-				</p>
-				<p>
-					Após instalar o SASS <a href="https://sass-lang.com/install" target="_blank">(https://sass-lang.com/install)</a>,
-					podemos começar a aproveitar suas vantagens:
-				</p>
-				<p>
-					<h2>Variáveis</h2>
-					No SASS você pode reutilizar informação, guardando-as em variáveis, para criar uma variável utilize o $ na frente
-					do nome, por exemplo:
-					<br>
-					<img class="tutorial" src="images/tutorialsass/variaveis.png" alt="variaveis">
-				</p>
-				<p>
-					<h2>Aninhamento</h2>
-					É possível aninhar seletor para ter código hierárquico e visualmente mais fácil de entender:
-					<img class="tutorial" src="images/tutorialsass/aninhamento.png" alt="aninhamento">
-				</p>
-				<p>
-					<h2>Importação</h2>
-					O SASS combinará o arquivo que você quer importar com o arquivo de destino. Assim, você pode servir apenas um
-					arquivo CSS para o navegador. Por exemplo:
-					Digamos que você possua dois arquivos SASS: _reset.scss e base.scss e queira importar _reset.scss para base.scss
-					(note que não precisamos colocar o .scss depois do nome de arquivo, nem o “_”).
-					<img class="tutorial" src="images/tutorialsass/importacao.png" alt="importacao">
-				</p>
-				<p>
-					<h2>Mixins</h2> Um mixin permite a reutilização de grupos de declarações CSS, por exemplo:
-					<img class="tutorial" src="images/tutorialsass/mixins.png" alt="mixins">
-					<br>
-					Declaramos o mixin com @mixin e depois o utilizamos com @include.
-				</p>
-				<p>
-					<h2>Herança</h2> Herança permite o compartilhamento de um conjunto de propriedades CSS de um seletor para outro,
-					ajudando a manter seu SASS adequado ao conceito DRY(Don’t Repeat Yourself). Para isso é necessário criar uma
-					classe placeholder, que só é impressa quando é herdada.
-					Caso a %mensagem-compartilhada não fosse utilizada, ela não seria impressa no .CSS resultado da compilação.
-					<img class="tutorial" src="images/tutorialsass/heranca.png" alt="heranca">
-					
-					
-				</p>
-				<p>
-					<h2>Operadores</h2> Com os operadores é possível realizar operações matemáticas como +, -, *, / e %. Por exemplo: <br>
-					<img class="tutorial" src="images/tutorialsass/operadores.png" alt="operadores">
-				</p>
-			</div>
-		</article>
+		<section>
+			
+			<h1>Variáveis Nativas CSS Versus Variáveis SASS</h1>
+
+			<p>As variáveis ​​são uma das principais razões pelas quais os pré-processadores de CSS existem. A capacidade de
+				definir uma variável para algo como uma cor, usar essa variável em todo o CSS que você escreve e saber que ela será
+				consistente, seca e fácil de alterar é útil. Você pode usar variáveis ​​CSS nativas (<i>CSS Custom Properties</i>)
+				pelas
+				mesmas razões. Mas também existem algumas diferenças importantes que devem ficar claras.</p>
+		
+			<h3>Variáveis Nativas CSS</h3>
+
+			<h4>Como declarar uma variável?</h4>
+			<p>Para declarar uma variável nativa CSS (as chamadas <i>Custom Properties</i>), usamos a seguinte sintaxe:</p>
+			<script async src="https://jsfiddle.net/hlsouza/25oh1bcz/embed/css/dark/"></script>
+			<p>Por definição uma <i>Custom Properties</i> é qualquer propriedade que inicie com dois hífens, como <code class="codespan">--foo</code>.</p>
+
+			<h4>Como utilizar uma variável?</h4>
+			<p>Para utilizar uma variável utilizamos a função <code class="codespan">var()</code>, passando a variável criada
+				como parâmetro, assim ela irá
+				retornar o valor da variável, veja o exemplo a seguir:</p>
+			<script async src="https://jsfiddle.net/hlsouza/bqszv6em/embed/css/dark/"></script>
+			<p>O que equivale diretamente a:</p>
+			<script async src="https://jsfiddle.net/hlsouza/tg5ek3jf/embed/css/dark/"></script>
+
+			<h4>Conceito de escopo</h4>
+			<p>Observe o código abaixo para entender o conceito de escopo das variáveis nativas CSS, também coonhecido como
+				conceito de cascata.</p>
+			<script async src="https://jsfiddle.net/hlsouza/rbg1u7p5/embed/css/dark/"></script>
+			<p>Qualquer <code class="codespan">h2</code> será laranja, porque qualquer <code class="codespan">h2</code> será um
+				filho de <code class="codespan">body</code>, que tem uma maior especificidade aplicável. Você pode até mesmo
+				redefinir as variáveis ​​dentro das consultas de mídia e fazer com que esses novos valores entrem em cascata por
+				todos descendentes, algo que simplesmente não é possível com variáveis ​​SASS.</p>
+			<p>Vale salientar que as variáveis devem seguir o escopo da página, logo, uma variável não pode ser usada fora de seu escopo. Os dois exemplos
+				abaixo exemplificam o uso adequado ou não do escopo das variáveis.</p>
+			<p>Exemplo de utilização correta do escopo:</p>
+			<script async src="https://jsfiddle.net/hlsouza/4urtckx5/embed/css/dark/"></script>
+			<p>Exemplo de utilização incorreta do escopo:</p>
+			<script async src="https://jsfiddle.net/hlsouza/qazrh9g3/embed/css/dark/"></script>
+			<p>Entretando existe uma boa notícia: podemos declarar variáveis em um tipo de “escopo global”, que	nada mais é do que a raiz do documento, 
+				e elas servirão para os demais descendentes, para isso utilizamos o seletor <code class="codespan">:root</code>.</p>
+			<script async src="https://jsfiddle.net/hlsouza/g21hq7nk/1/embed/css/dark"></script>
+
+			<h4>Até aqui legal, mas e o suporte?</h4>
+			<p>Nem tudo são flores amigos, até o momento o suporte é bom, mas não 100% (veja a tabela completa no <a href="https://caniuse.com/#feat=css-variables"><i>Can
+						i use</i></a>).
+				Mas não teria graça se existisse uma coisa tão divertida e ninguém pudesse usar e nem tivesse um suporte bom,
+				todavia, para nos ajudar existe o maravilhoso <i>postcss-css-variables</i>, que é um plugin para <i>Post CSS</i>
+				que pega suas variáveis e as poem em seu devido lugar, compilando seu “CSS do futuro”, para um CSS nativo e
+				suportado por todos.</p>
+
+			<h4>Vantagens do uso das variáveis nativas do CSS</h4>
+			<ul>
+				<li>Evita a repetição de código e melhora a manutenção deste código;</li>
+				<li>Você pode usá-las sem a necessidade de um pré-processador;</li>
+				<li>Suporte à manipulação dinâmica: podem ser mudadas em tempo de execução;</li>
+				<li>Conceito de escopo: você pode definir uma variável dentro de qualquer seletor para definir ou substituir seu valor atual;</li>
+				<li>Você pode acessá-las e manipulá-las com <i>JavaScript</i>.</li>
+			</ul>
+
+			<h3>Variáveis SASS</h3>
+
+			<h4>Como declarar uma variável?</h4>
+			<p>É simples declarar variáveis SASS, para isso utiliza-se a sintaxe <code class="codespan">$nomeDaVariavel</code>.</p>
+			<script async src="https://jsfiddle.net/hlsouza/8u3atwxn/4/embed/css/dark/"></script>
+			<p>Contudo o código acima não faria nada em um navegador, pois ele não iria entender as declarações e jogá-las fora.
+				Logo, o código precisa ser compilado por um pré-processador para ser transformado em código CSS e assim ser
+				entendido pelo navegador. Este código iria compilar para:</p>
+			<script async src="https://jsfiddle.net/hlsouza/oy58eqc3/embed/css/dark/"></script>
+
+			<h4>Vantagens do uso das variáveis SASS</h4>
+			<ul>
+				<li>Não precisa se preocupar com o suporte dos navegadores, já que elas são compiladas em CSS puro;</li>
+				<li>Evita a repetição de código e melhora a manutenção deste código.</li>
+			</ul>
+
+			<h4>Combinando o uso de ambos</h4>
+			<p>O exemplo abaixo mostra também o uso combinado de variáveis nativas CSS e variáveis SASS.</p>
+			<script async src="https://jsfiddle.net/hlsouza/1ebw9hy2/embed/css/dark/"></script>
+
+			<h3>Referências</h3>
+			<p>Tableless - <a href="https://tableless.com.br/como-usar-variaveis-no-css-de-forma-nativa/">Como usar variáveis no CSS de forma nativa</a></p>
+			<p>Css Tricks - <a href="https://css-tricks.com/difference-between-types-of-css-variables/">What is the difference between CSS variables and preprocessor variables?</a></p>
+			
+		</section>
+
 	</main>
 </body>
+<section id="pre-footer">
+	<div class="pre-footer-content">
+		<section>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				Pellentesque a pretium dolor. Vestibulum porta at enim in gravida.
+				Sed condimentum laoreet massa quis luctus.</p>
+		</section>
+		<section>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				Pellentesque a pretium dolor. Vestibulum porta at enim in gravida.
+				Sed condimentum laoreet massa quis luctus.</p>
+		</section>
+		<section>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				Pellentesque a pretium dolor. Vestibulum porta at enim in gravida.
+				Sed condimentum laoreet massa quis luctus.</p>
+		</section>
+		<section>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				Pellentesque a pretium dolor. Vestibulum porta at enim in gravida.
+				Sed condimentum laoreet massa quis luctus. </p>
+		</section>
+		<section>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				Pellentesque a pretium dolor. Vestibulum porta at enim in gravida.
+				Sed condimentum laoreet massa quis luctus.</p>
+		</section>
+		<section>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				Pellentesque a pretium dolor. Vestibulum porta at enim in gravida.
+				Sed condimentum laoreet massa quis luctus.</p>
+		</section>
+	</div>
+</section>
 <footer>
 	<section class="footer-txt">
 		<p>Portal Unipê Ver. 3.0 . Copyright © Todos os direitos reservados . Design e Projeto - Ascom Unipê</p>
