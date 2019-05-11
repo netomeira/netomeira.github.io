@@ -1,0 +1,75 @@
+@charset "UTF-8";
+:root {
+  --yellow: #ffc600; }
+
+html {
+  color: #444;
+  font-family: Cambria, Cochin, Georgia, "Times New Roman", Times, serif;
+  font-size: 20px; }
+
+p, li {
+  line-height: 1.8; }
+
+img {
+  max-width: 100%; }
+
+a {
+  color: black;
+  text-decoration: underline wavy var(--yellow); }
+
+h1, h2 {
+  font-size: 80px;
+  font-style: italic;
+  font-weight: 100;
+  margin: 0; }
+
+.poema {
+  display: grid;
+  grid-area: "poema";
+  max-width: 1000px;
+  margin: 200px auto;
+  grid-gap: 10px 50px;
+  grid-template-columns: 3fr 12fr 5fr; }
+  .poema ul {
+    padding-left: 0px;
+    list-style-type: none; }
+
+.poem ol {
+  padding-left: 0px;
+  list-style-type: none;
+  /*Fechine, cuidado quando for compilar o sass nesses trechos com grid-column, às vezes
+   * ele pode achar que é uma operação matemática e dividir os 2 valores */ }
+
+.poema > * {
+  grid-column: 2/-2; }
+.poema > figure {
+  margin: 0;
+  grid-column: 1/-1; }
+.poema li:first-child::first-letter {
+  font-size: 30px;
+  font-style: italic; }
+
+figcaption {
+  font-size: 10px; }
+
+.poema > blockquote {
+  grid-column: 1/-1;
+  font-size: 60px;
+  font-style: italic;
+  text-align: center;
+  margin: 0; }
+
+.nota {
+  background: #FAFAFA;
+  padding: 10px;
+  grid-row: span 5;
+  align-self: start; }
+
+.nota-esquerda {
+  grid-column: 1/span 1;
+  text-align: right;
+  border-right: 2px solid var(--yellow); }
+
+.nota-direita {
+  grid-column: span 1/-1;
+  border-left: 2px solid var(--yellow); }
