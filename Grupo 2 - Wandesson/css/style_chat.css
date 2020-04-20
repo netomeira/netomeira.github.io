@@ -1,0 +1,124 @@
+.barralateral {
+  padding: 0;
+  background-color: #122033;
+  width: 16%;
+  height: 100%;
+  padding: 0;
+  color: #b8b0b7;
+}
+.barralateral img {
+  width: 70%;
+}
+.barralateral p {
+  margin: 0 10px;
+}
+.barralateral .grupo {
+  height: 100%;
+  display: block;
+}
+.barralateral .grupo .circleon {
+  float: left;
+  border-radius: 100%;
+  border: 1px solid #008200;
+  width: 10px;
+  height: 10px;
+  background-color: #00CE00;
+  margin-top: 11px;
+  margin-left: 12px;
+}
+.barralateral .grupo .circleoff {
+  float: left;
+  border-radius: 100%;
+  border: 1px solid #6B0000;
+  width: 10px;
+  height: 10px;
+  background-color: #EB0000;
+  margin-top: 11px;
+  margin-left: 12px;
+}
+.barralateral .grupo p {
+  padding-left: 20px;
+}
+.barralateral .grupo #selecionado {
+  background-color: #2D507F;
+}
+.barralateral .grupo p:hover {
+  background-color: #223C5C;
+}
+.barralateral .grupo h1 {
+  margin-left: 10px;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+main {
+  width: 100%;
+}
+
+.content {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin-top: 2%;
+}
+.content .separate {
+  width: 100%;
+}
+.content .separate p {
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 5px;
+}
+.content .divmessage {
+  display: flex;
+  flex-direction: row;
+}
+.content .divmessage .imgmessage {
+  width: 75px;
+  height: 75px;
+}
+.content .divmessage .imgmessage .imguser {
+  width: 75px;
+  height: 75px;
+}
+.content .divmessage .groupmessage {
+  display: flex;
+  flex-direction: column;
+}
+.content .divmessage .groupmessage p {
+  margin: 6px;
+}
+.content .divmessage .groupmessage .infomessage {
+  display: flex;
+  flex-direction: row;
+  margin-top: 9px;
+}
+.content .divmessage .groupmessage .username {
+  font-weight: bold;
+}
+.content .divmessage .groupmessage .schedule {
+  font-size: 10px;
+}
+.content .divmessage:hover {
+  background-color: #D8E1F7;
+}
+.content .entertext {
+  width: 100%;
+  margin: 10px;
+}
+.content .entertext input {
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 40px;
+  width: 100%;
+  padding: 8px;
+  font-family: 'Lato', sans-serif;
+}

@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+  transition: 1s; }
+
+main {
+  font: normal 13px arial, sans-serif; }
+  @media only screen and (max-width: 1000px) {
+    main {
+      width: 100%; } }
+
+.main-section {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  @media only screen and (max-width: 1000px) {
+    .main-section {
+      flex-direction: column;
+      width: 95%; } }
+
+.main-section-info-aluno {
+  background: rgba(1, 1, 1, 0.1);
+  width: 20%; }
+  @media only screen and (max-width: 1000px) {
+    .main-section-info-aluno {
+      width: 100%;
+      margin-top: 5px; } }
+
+.main-section-info-aluno-image {
+  border-radius: 50px;
+  border: 1px solid rgba(37, 36, 36, 0.1);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  max-width: 100%; }
+
+.main-section-info-aluno-detail {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px; }
+
+.main-section-info-aluno-detail-nome {
+  font-weight: bold; }
+
+.main-section-disciplinas {
+  margin-left: 5px;
+  background: rgba(1, 1, 1, 0.1);
+  width: 37%; }
+  @media only screen and (max-width: 1000px) {
+    .main-section-disciplinas {
+      width: 100%;
+      margin-left: auto;
+      margin-top: 5px; } }
+
+.main-section-disciplinas-head {
+  margin-left: 5px;
+  font-weight: bold; }
+
+.main-section-disciplinas-grid {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-gap: 2px;
+  margin: 10px; }
+
+.main-section-disciplinas-grid-item {
+  background-color: #b7d2e9; }
+
+.main-section-detail {
+  margin-left: 5px;
+  background: rgba(1, 1, 1, 0.1);
+  width: 18%; }
+  @media only screen and (max-width: 1000px) {
+    .main-section-detail {
+      width: 100%;
+      margin-left: auto;
+      margin-top: 5px; } }
+
+.main-section-detail-periodo {
+  height: 50px;
+  margin: 5px;
+  margin-bottom: 10px;
+  border: 1px dashed #7c7;
+  background-color: white; }
+
+.main-section-detail-periodo-head {
+  border-bottom: 1px solid #7c7;
+  background-color: #efe; }
+
+.main-section-detail-cre {
+  height: 50px;
+  margin: 5px;
+  margin-bottom: 10px;
+  border: 1px dashed #ac9090;
+  background-color: white; }
+
+.main-section-detail-cre-head {
+  border-bottom: 1px solid #ac9090;
+  background-color: #d1bdbd; }
+
+.main-section-frequencia {
+  margin-top: 5px;
+  background: rgba(1, 1, 1, 0.1);
+  width: 38%; }
+  @media only screen and (max-width: 1000px) {
+    .main-section-frequencia {
+      width: 100%; } }
+
+.main-section-notas {
+  margin-left: 5px;
+  margin-top: 5px;
+  background: rgba(1, 1, 1, 0.1);
+  width: 37.4%; }
+  @media only screen and (max-width: 1000px) {
+    .main-section-notas {
+      width: 100%;
+      margin-left: auto; } }
+
+.main-section-historico {
+  margin-top: 5px;
+  background: rgba(1, 1, 1, 0.1);
+  width: 38%; }
+  @media only screen and (max-width: 1000px) {
+    .main-section-historico {
+      width: 100%; } }
+
+.main-section-historico-div, .main-section-solicitacoes-div {
+  overflow: auto;
+  height: 350px;
+  margin-bottom: 20px;
+  margin-top: 10px; }
+
+.main-section-historico-div-table {
+  border-collapse: collapse;
+  border: 1px solid #666;
+  margin: auto;
+  width: 75%; }
+  .main-section-historico-div-table tr:nth-child(odd) {
+    background-color: #ffffff; }
+  .main-section-historico-div-table tr:nth-child(even) {
+    background-color: #ddecff; }
+  .main-section-historico-div-table th {
+    text-align: left; }
+  .main-section-historico-div-table .td-periodo {
+    text-align: center;
+    background: #cacaca; }
+  .main-section-historico-div-table caption {
+    font-weight: bold; }
+
+.main-section-solicitacoes {
+  margin-left: 5px;
+  margin-top: 5px;
+  background: rgba(1, 1, 1, 0.1);
+  width: 37.4%; }
+  @media only screen and (max-width: 1000px) {
+    .main-section-solicitacoes {
+      width: 100%;
+      margin-left: auto; } }
+
+.main-section-solicitacoes-div-table {
+  margin: auto;
+  width: 75%;
+  border-spacing: 2px 2px; }
+  .main-section-solicitacoes-div-table td, .main-section-solicitacoes-div-table tr {
+    background: #cecece; }
+  .main-section-solicitacoes-div-table caption {
+    font-weight: bold; }
+
+/*# sourceMappingURL=informacoes_academicas.css.map */

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css"/>
+		<link rel="stylesheet" href="css/transition-transform-animation.css"/>
+		<title>Projeto design de interface</title>
+	</head>
+	<header>
+		<div class="top-site">
+			<section class="top">
+				<h1><img src="images/logo.png" alt=""></h1>
+			</section>
+			<section class="top">
+				<p></p>
+			</section>
+			<section class="top">
+				<input class="item" type="search" placeholder="Buscar"></div>
+			</section>
+			</section>
+		</div>
+	</header>
+	<section class="banner">
+	</section>
+	<nav>
+		<menu>
+			<ul class="menu-list">
+			  <li><a class="active" href="#home">Home</a></li>
+			  <li><a href="#">pagina 01</a></li>
+			  <li><a href="#">pagina 02</a></li>
+			  <li><a href="#">pagina 03</a></li>
+			</ul>
+		<menu>
+	</nav>
+	<body>
+		<main id="tutorial">
+			<section>
+				<h1>Transitions</h1>
+				<p>Transitions do CSS3 permite alterar valores de uma propriedade de um elemento de forma gradativa, dentro de um periodo de tempo. 
+					Para criar um efeito de transição, é necessário especificar duas coisas:</p>
+				<ul>
+					<li>A propriedade CSS que você adicionar efeito</li>
+					<li>A duração que o efeito deve ter</li>
+				</ul>
+
+				<h3>Exemplo</h3>
+				<script async src="https://jsfiddle.net/rafaelsm/3kxbnfwr/embed/html,css,result/dark/"></script>
+			</section>
+
+			<section>
+				<h2>Especificando uma curva de velocidade para a transição</h2>
+				<p>Você pode espeficar uma curva de volocidade para o efeito de transição através da propriedade <code class="codespan">transition-timing-function</code>. Esta propridade pode ter
+				os seguintes valores:</p>
+				<ul>
+					<li><code class="codespan">ease</code> - especifica um efeito de transição de começa devagar, depois rápido e termina devagar (este é o efeito padrão)</li> 
+					<li><code class="codespan">linear</code> - especifica um efeito de transição de tem a mesma velocidade do inicio ao fim</li>
+					<li><code class="codespan">ease-in</code> - especifica um efeito de transição que começa devagar e vai aumentando a velocidade</li>
+					<li><code class="codespan">ease-out</code> - especifica um efeito de transição que termina devagar</li>
+					<li><code class="codespan">ease-in-out</code> - especifica um efeito de transição que começa e termina devagar</li>
+					<li><code class="codespan">cubic-bezier(n,n,n,n)</code> - deixa você definir seus próprios valores para uma função de cubic-bezier</li>
+				</ul>
+
+				<h3>Exemplo</h3>
+				<script async src="https://jsfiddle.net/rafaelsm/tkz3yp5f/3/embed/html,css,result/dark/"></script>
+			</section>
+
+			<section>
+				<h2>Delay para transição</h2>
+				<p>Você pode especificar em delay para o inicio da transição através da propriedade <code class="codespan">transition-delay</code>.</p>
+
+				<h3>Exemplo</h3>
+				<script async src="https://jsfiddle.net/rafaelsm/392vf0tn/2/embed/html,css,result/dark/"></script>
+			</section>
+
+		</main>
+	</body>
+	<section id="pre-footer">
+		<div class="pre-footer-content">
+			<section>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Pellentesque a pretium dolor. Vestibulum porta at enim in gravida.
+					Sed condimentum laoreet massa quis luctus.</p>
+			</section>
+			<section>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Pellentesque a pretium dolor. Vestibulum porta at enim in gravida.
+					Sed condimentum laoreet massa quis luctus.</p>
+			</section>
+			<section>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Pellentesque a pretium dolor. Vestibulum porta at enim in gravida.
+					Sed condimentum laoreet massa quis luctus.</p>
+			</section>
+			<section>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Pellentesque a pretium dolor. Vestibulum porta at enim in gravida.
+					Sed condimentum laoreet massa quis luctus. </p>
+			</section>
+			<section>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Pellentesque a pretium dolor. Vestibulum porta at enim in gravida.
+					Sed condimentum laoreet massa quis luctus.</p>
+			</section>
+			<section>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Pellentesque a pretium dolor. Vestibulum porta at enim in gravida.
+					Sed condimentum laoreet massa quis luctus.</p>
+			</section>
+		</div>
+	</section>
+	<footer>
+		<section class="footer-txt">
+			<p>Portal Unipê Ver. 3.0 . Copyright © Todos os direitos reservados . Design e Projeto - Ascom Unipê</p>
+			<p>IPE Educacional Ltda. Política de Privacidade.</p>
+			<p>CNPJ: 08.679.557/0001-02</p>
+			<p><span>Graças a generosidade da QuestionPro, temos acesso ao seu software de pesquisa online que nos ajuda a acompanhar e analisar informações sobre nossos stakeholders.</span></p>
+		</section>
+		<section style="position: initial">
+			<img src="images/footerimg.jpg" alt="">
+		</section>
+	</footer>
+	<script src="js/script.js"></script>
+</html>

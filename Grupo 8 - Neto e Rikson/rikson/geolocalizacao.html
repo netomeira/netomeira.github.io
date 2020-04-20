@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css"/>
+		<title>Projeto design de interface</title>
+	</head>
+<body>
+
+<h1>GEOLOCALIZAÇÃO</h1>
+<div class="paragrafo01">
+  <p> A HTML Geolocation API é usada para obter a posição geográfica de um usuário.</p>
+
+  <p> Como isso pode comprometer a privacidade, a posição não estará disponível, a menos que o usuário aprove.</p>
+
+  <p>Clique no botão para pegar suas coordenadas.</p>
+</div>
+
+<button onclick="getLocation()">Clique aqui</button>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocalizacao não suportada por esse browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+</body>
+</html>
