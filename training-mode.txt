@@ -1,0 +1,3 @@
+- dummy recording (side correcting (configurable on/off), multiple slots)
+- Frame data display
+- Hitbox display

@@ -1,0 +1,8 @@
+- Set in a city (could relate to the name of the game/maybe not, could limit the scope of stages);
+- When rematching after a loss, special animation for your character getting up with some encouraging quote reacting to the victory 
+    quote of the enemy (break this rule if the character is implied to kill the enemy, not sure yet what kind of tone would be cool)
+- Random stage select should change the stage every match
+- Character pick should be reversible up until the point the match starts
+- Character select accessible from everywhere
+- Controller setting should be tap to set and accessible on the character select screen
+- Button check available on character select screen and settings
