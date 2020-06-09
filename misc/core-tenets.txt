@@ -6,7 +6,7 @@
 - Hits must sell impact, focus on strong keyposes and angle of the character at all times (avoid characters that fight slapping like Nina);
 - Unreal Engine;
 - Stages need to feel alive while not getting in the way of reading things, while telling cool stories between rounds;
-- Make it unmecessary to check for things outside of the game like frame data;
+- Make it unnecessary to check for things outside of the game like frame data;
 - Clear visual communication for frame data (inspired on Soul Calibur break moves) or make it not very important by improving pushblock;
 - Fight request from training mode;
 - All play lobby (everyone plays at the same time)
